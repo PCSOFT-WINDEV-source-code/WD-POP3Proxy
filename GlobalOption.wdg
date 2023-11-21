@@ -1,0 +1,211 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : GlobalOption
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x186e66d202d21d41
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1+
+      stOption is Structure
+      	m_sOptionName is string
+      	m_valOption is variant
+      END
+      
+      gsOptionKey is string // Registry key used to save the options
+      gparrOption is array dynamic = new array of 0 stOption // Table of options
+      gnnbOption is int = 0 // Number of options
+     type : 720896
+   -
+     code : |1-
+      
+      delete gparrOption
+      gnnbOption = 0
+     type : 720898
+  procedures :
+   -
+     name : DeclareOption
+     procedure_id : 1760457556524997953
+     type_code : 15
+     code : |1+
+      // Syntax:
+      //DeclareOption (<sName> is string, <defVal>)
+      //
+      // Parameters:
+      //	sName (ANSI string): Name of the option
+      //	defVal: Default Value
+      // Return value:
+      // 	None
+      
+      PROCEDURE DeclareOption(LOCAL sName is string, defVal )
+      // Declare a new option (no action if the option was already declared
+      
+      nRank is int = nFindOption(sName)
+      IF nRank = -1 THEN
+      	gnnbOption++
+      	Dimension(gparrOption,gnnbOption)
+      	gparrOption[gnnbOption]:m_sOptionName = Upper(sName)
+      	gparrOption[gnnbOption]:m_valOption = defVal
+      ELSE
+      	gparrOption[nRank]:m_sOptionName = Upper(sName)
+      	gparrOption[nRank]:m_valOption = defVal
+      END
+     type : 458752
+   -
+     name : nFindOption
+     procedure_id : 1760457556525063489
+     type_code : 15
+     code : |1-
+      // Syntax:
+      //[ <Result> = ] nFindOption (<sName> is string)
+      //
+      // Parameters:
+      //	sName (ANSI string): Name of the sought option
+      // Return value:
+      // 	integer: 
+      
+      PROCEDURE nFindOption(LOCAL sName is string)
+      
+      nBound is int
+      
+      // Returns the rank of an option or -1 if it is not found
+      nBound = gnnbOption
+      FOR nRank = 1 TO nBound
+      	IF gparrOption[nRank]:m_sOptionName ~= sName THEN RESULT nRank
+      END
+      
+      RESULT -1
+     type : 458752
+   -
+     name : sGetOption
+     procedure_id : 1760457556525129025
+     type_code : 15
+     code : |1-
+      // Syntax:
+      //[ <Result> = ] sGetOption (<sName> is string)
+      //
+      // Parameters:
+      //	sName (ANSI string): Name of the sought option
+      // Return value:
+      // 	Undefined type: 
+      
+      PROCEDURE sGetOption(LOCAL sName is string)
+      
+      // Returns the string value of an option
+      nRank is int = nFindOption(sName)
+      IF nRank = -1 THEN RESULT ""
+      
+      RESULT "" + gparrOption[nRank]:m_valOption
+     type : 458752
+   -
+     name : nGetOption
+     procedure_id : 1760457556525194561
+     type_code : 15
+     code : |1+
+      // Syntax:
+      //[ <Result> = ] nGetOption (<sName> is string)
+      //
+      // Parameters:
+      //	sName (ANSI string): Name of the sought option
+      // Return value:
+      // 	Undefined type: 
+      
+      PROCEDURE nGetOption(LOCAL sName is string)
+      
+      // Returns the value of an option
+      nRank is int = nFindOption(sName)
+      IF nRank = -1 THEN RESULT 0
+      
+      RESULT Val(gparrOption[nRank]:m_valOption)
+     type : 458752
+   -
+     name : InitOption
+     procedure_id : 1760457556525260097
+     type_code : 15
+     code : |1-
+      // Syntax:
+      //InitOption (<sRegKey> is string)
+      //
+      // Parameters:
+      //	sRegKey (ANSI string): Registry key that contains the global options
+      // Return value:
+      // 	None
+      
+      PROCEDURE InitOption(LOCAL sRegKey is string )
+      
+      // Initialize the set
+      gsOptionKey = sRegKey
+     type : 458752
+   -
+     name : SaveOption
+     procedure_id : 1760457556525325633
+     type_code : 15
+     code : |1-
+      // Syntax:
+      //SaveOption ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      PROCEDURE SaveOption()
+      
+      
+      nBound is int
+      
+      // Save the options in the registry
+      
+      // Force the key creation
+      RegistryCreateKey(gsOptionKey)
+      
+      nBound = gnnbOption
+      // Then add the values (they will be saved in text format)
+      FOR n=1 TO nBound
+      	RegistrySetValue(gsOptionKey, gparrOption[n]:m_sOptionName, "" + gparrOption[n]:m_valOption)
+      END
+     type : 458752
+   -
+     name : LoadOption
+     procedure_id : 1760457556525391169
+     type_code : 15
+     code : |1-
+      // Syntax:
+      //LoadOption ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      PROCEDURE LoadOption()
+      
+      nBound is int
+      
+      // Read the options in the registry
+      nBound = gnnbOption
+      
+      // Then add the values (they will be saved in text format)
+      FOR n = 1 TO nBound
+      	IF RegistryExist(gsOptionKey,gparrOption[n]:m_sOptionName) THEN
+      		gparrOption[n]:m_valOption = RegistryQueryValue(gsOptionKey, gparrOption[n]:m_sOptionName)
+      	END
+      END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : OptionGlobal
+resources :
+ string_res :
+  identifier : 0x3f0a764078bf1391
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

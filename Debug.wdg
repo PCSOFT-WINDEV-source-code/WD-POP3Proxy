@@ -1,0 +1,196 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : Debug
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x186e66d102c419c6
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAACj6Nr4VreCy5oMEc9y2pM1kUfoEIm45ri8DYrZSDZOnrUWSu1sryrNNsyrQpXy0MzMm8cJpiNx6SqLlCRe16wWjybxvm7Ks1Gero1kHY+XG7azrPE94znsGSf23jWuaC5x4Tzukm223WAAiqys2Fsmn4VkknqqnYrDd+Lgqy30x7ucxTlS+wauIxJS8XRkq3h+rn/d4rlMSDU7P6xQ2vH3X2kMBZSi7K3naUe2C7vhbgrNOepZjKcI6kTYtPsp5DjCGctAcd4Akh7NcOFQ0ohPjaI5CJ+aJCHL
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAA/eX4hbepAsnuAuw54A+A538Gk8LiRw2fTPg+kBFFHp2UITuzr9OkhLK+/sBQi5U7DPlLcwHiAUij3viPyfnye938CUS+yzp6+2AjiKHBWZHXXxvncSdzdalorstG3Be5vg91PTLuK8uBig9g=
+     code : |1+
+      gsConfigFile is string = fExeDir()+["\"]+"config.ini"
+      gbDebugMode is boolean = INIRead(<§@3b9772654e5400c2000d§>, <§@3b9772654e5400c2000e§>, "0", gsConfigFile)
+      IF InTestMode() THEN gbDebugMode = True
+      gsLogFile is string
+      
+      CONSTANT
+      	FIL_XTRACE = <§@3b9772654e5400c2000f§>
+      END
+     type : 720896
+  procedures :
+   -
+     name : XTrace
+     internal_properties : CAAAAAgAAACk30CWhpjDSTpaVy1q1hsiL8TsHKKD7T5osozVDZTSw7bbcQxRKvC1oMgKcF621S6kHPSl7v4t43Bc5Z5s/AQlR3Cq+lwSr5LGnhqsnp/AqziV87uHiFXivhNekDWm2LVVjBOpXhMHwMJ1wJdGwiuWj/V5cJqnQtmCN4b4l2PJtLBSDEBJiNdCLoOFkxZ+j3IETumEnzQ=
+     procedure_id : 1760457552229112262
+     type_code : 15
+     code : |1-
+      PROCEDURE XTrace(LOCAL sLine is string)
+      
+      IF NOT gbDebugMode THEN RETURN
+      
+      sTimeStamp is string = "["+TimeToString(TimeSys())+"]"
+      
+      // To enable the trace, XTrace=1 must be found
+      // in the [TRANSFIC] section of win.ini
+      IF INIRead(<§@3b9772654e5400c20010§>, <§@3b9772654e5400c20001§>, "0", gsConfigFile) = "1" THEN
+      	
+      	// Attempt to open the trace file in add mode
+      	// (create if it does not exist)
+      	nFileID is int = fOpen(FIL_XTRACE, foCreateIfNotExist+foAdd)
+      	// If the opening fails, abandon
+      	IF nFileID = -1 THEN RETURN
+      
+      	// Write the line
+      	fWriteLine(nFileID, sTimeStamp+sLine)
+      
+      	// And close the file
+      	fClose(nFileID)
+      	
+      END
+      
+      IF INIRead(<§@3b9772654e5400c20010§>, <§@3b9772654e5400c20005§>, "0", gsConfigFile) = "1" THEN
+      	Trace(sTimeStamp+sLine)
+      END
+     type : 458752
+   -
+     name : XLog
+     procedure_id : 1760457552229177798
+     type_code : 15
+     code : |1+
+      PROCEDURE XLog(LOCAL sContext is string, LOCAL sLine is string)
+      // Procedure allowing WDSetup to generate a log file for the operations performed
+      
+      // Each log is also a trace
+      XTrace(sContext +TAB+ sLine)
+      
+      IF WinStatus(WIN_Main) <> NotFound THEN
+      	TableInsertLine(WIN_Main.TABLE_OperationsLog, 1, DateSys(), TimeSys(), sContext, sLine)
+      END
+      
+      // Exit if no log file was specified
+      IF gsLogFile = "" THEN RETURN
+      
+      // Otherwise, try to open the file
+      nLogFileID is int = fOpen(gsLogFile, foAdd+foCreateIfNotExist)
+      // If the opening is successful
+      IF nLogFileID <> -1 THEN
+      	
+      	// Write the text of the log in the following format:
+      	// [CONTEXT - DDMMYYYY - HHMMSS]: TEXT
+      	fWriteLine(nLogFileID, "["+ sContext +" -"+ DateToString(DateSys(), <§@3b9772654e5400c2000a§>) +" - "+ Left(TimeToString(TimeSys()), 6)+"] - "+sLine)
+      	
+      	// Then, close the file
+      	fClose(nLogFileID)
+      	
+      END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Debuggage
+resources :
+ string_res :
+  identifier : 0x3b9772654e5400c2
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : WDSETUP
+     index : 0
+     string_index : 1
+   -
+     text :
+      en-GB : XTrace
+     index : 1
+     string_index : 23
+   -
+     text :
+      en-GB : "0"
+     index : 2
+     string_index : 24
+   -
+     text :
+      en-GB : "1"
+     index : 3
+     string_index : 29
+   -
+     text :
+      en-GB : WDSETUP
+     index : 4
+     string_index : 3
+   -
+     text :
+      en-GB : XTraceWin
+     index : 5
+     string_index : 25
+   -
+     text :
+      en-GB : "0"
+     index : 6
+     string_index : 26
+   -
+     text :
+      en-GB : "1"
+     index : 7
+     string_index : 30
+   -
+     text :
+      en-GB : "["
+     index : 8
+     string_index : 6
+   -
+     text :
+      en-GB : " -"
+     index : 9
+     string_index : 27
+   -
+     text :
+      en-GB : DDMMYYYY
+     index : 10
+     string_index : 8
+   -
+     text :
+      en-GB : " -"
+     index : 11
+     string_index : 28
+   -
+     text :
+      en-GB : " ] :"
+     index : 12
+     string_index : 10
+   -
+     text :
+      en-GB : WDPOP3PROXY
+     index : 13
+   -
+     text :
+      en-GB : DEBUG
+     index : 14
+   -
+     text :
+      en-GB : "c:\\WDPOP3Proxy.txt"
+     index : 15
+   -
+     text :
+      en-GB : WDPOP3PROXY
+     index : 16
+   -
+     text : {}
+     index : 17
+     string_index : 5
+   -
+     text :
+      en-GB : "] - "
+     index : 18
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

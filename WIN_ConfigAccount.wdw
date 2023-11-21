@@ -1,0 +1,538 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_ConfigAccount
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_ConfigAccount
+ identifier : 0x286e66cb1eae0208
+ internal_properties : CAAAAAgAAABnuJ/In6xDEl862wGF48jCA6fI+Kbl+vtarmpPjBsKwUB3gg6uJyVyimQ1tnl7I4s3oGCPaydsQwmK/eRiNyv2c2o4AZdiCq3+J6ckWPwVR82tcSK57/n85yst/PpLno82/0KIWLnUZiHLiIYypDGHnrtdYgjTgtA1BsXyoUC3UMZRIFgz2s4FZ8GBwa0reYzDkGjm3VRXnrdtBdVS7uqPyYAMbNhiNsao8OK3ql/wBpTxwaROch1lbFCQhcgkdx2hD2pFrSCE+9lqn3ZUlsIsI/n1Lbp7/J8gRtwSTYiLAC2YTEzgdXOgmBn82qHvn05wOCHyx2pxPGRYZxDHT5/YJHL1XboV21Dg87mTun62IEgG+McwHpIkf0CdSdvSr//k11XiDRiaV2xa8g94Dl70MjrG9Wi3o1zANf+rpAkCpD29S6wV8/zHg7Qh03TIw+xpFpXQlFsWA/TF/3cLv4rwnNh2e3G2LGeV5ZTl22K3vf3vNIOQ+tryd7j71uWwtPOhrXEJ28CaMkpWQoxWVysFU3mWoK3eRbJPbIzugykfFWbQbLm49uax9qck+d2MPZKdAjrqR+/R9DXA1DYpDtS/TpDsCNKAgaIgYpoJALDq4K8EBecICXNFJ6GHdGR66e20aIyfiIi6OVOgHPGLDRLqxCYXSG95hOTHgLmHk/7LTNAY4EX0I+XdOUULFZCt5DyhUyn5HXKi7Om+F9Uj8ojmMSToeobYYlTtbuY=
+ properties :
+  width : 496
+  height : 365
+  widthClient : 494
+  heightClient : 333
+ controls :
+  -
+    name : WD_POP3Proxy_can_configure
+    identifier : 0x286e66cb1eaf0208
+    internal_properties : CAAAAAgAAABapUwDLRtadqSkF6hyeNSMfTSOK7rfFa4YIUJc8cp7BT/5+dCxr6OuekyhTMiQx/4Rt6svNxYd4Renv6LQar1AcvR7vXBq0mEK5oTuMZgKZs+aFBfYvNzRLClV17hlTbcSp47nHB4wf8isWy5tPlZyieIHgW9NJ2lW31iQmgjspNi9erWBLhuheYmwYDL0+uyHU8cTBhU1/abyNRqvocuS+1vC06N5g2S7rMHLea0SHfSSvmcXFR/t03vnkuwRnC9e4P/l3wCuTNUVAhEQZ7QtIo7qyp5qu5ds+AYoXTsqJbpIHToy0MG0sVScKVA2MlfzX3+QjjJV99FX/xgSi4eaGyuJD4Rqsyc/jTjuqxer+Cictj8r1ejlKHKxf8pXhEtuhIQ76O8kr8t6rnBAWEnY1nMv4ir7qanFWQSYDzDbkLPFJW1Is7WPJR/686hqY7xR8UXVJIdRq2uLgVMHsNjyt8a//06DUN5oMJfaf7kNEjvXfoGKRX9djIbU0780KeLJQy/n7fwEt+pzdLHNQFz/j5C52pmOcXUB9SQclnx3qOCm9RLd7S1Dxbaio3rhVOQ3xYl0HBOX++kdnTKL+HwfD5HYLg/Hj71oeNe6ETL7ziGvqYQ7v4FqpFPsHjJCWl2gsgQfTgt72b2lJOflsOGj0q4UP0oE/ClZPSnFrnDrYDfR+fepxczFi46x0yreZk0ttAefuBxZpPyWdSDK+tUdFWMemu59EiREt9l7IlN/PIju+xQH7715/S6hNdkQOXNHSSXPEjdH5JiWJLWqHxdimkBXYB1c9Rbw
+    properties :
+     x : 6
+     y : 6
+     width : 480
+     height : 75
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : TABLE_OEAccount
+    identifier : 0x286e66cb1eb00208
+    internal_properties : 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
+    properties :
+     x : 6
+     y : 87
+     width : 482
+     height : 209
+    columns :
+     -
+       name : COL_sAccountLoc
+       identifier : 0x286e66cb1eb10217
+       internal_properties : CAAAAAgAAADrTSKrJh+nPMcMsPyodgLEU7HhuHSjX10QMBGIZnEiSSWvPamiJ+C5z2WJBeP9iP985uTrHC0KarQHt6v9oNc6Kmu2hhdK7EJLpfWfkoeIPwxJFPJypDF88jOnOo75o7FTU7cfmWhkPG7vGDnFhBcnv2Y4TsJacfZqqDMQuubbvJlvxHBKglvHVscOqJx9Mvudlvcmti6N5Tss8ZAvrzNynlo=
+       type : 2
+       content :
+        internal_properties : CAAAAAgAAAD6PYqCMqKBOtGrf6JNkClSF+Z7Jkr/OMTQRUUvzk+a1F5YdyBRChYOWzhgcHLpCGB+g/XSCSVcVWCTTfez1fYE0m2UI5LpCekfJww1g+h1nqqcyEK+CAyJtUVXS7/seVI6UfhinxQuxGXHkk+3ov5W1jYcMaAVp1sMo0wY7EGs/ZNEMSrtkZGzntJwIGqUvWZKf/sFQd+pxWpWO+N6G9eDNFci1TPoQ4kAMt2Ra/gouFI9aqc9D1g4Mvbc2vUiadUMep3t+AKlVD0WeVpvh6K6Pv14UIK8tKT6hUMHJm0u54z5QiDS6uPZF0hZ3MkAl8p7PORvE1TcXJYnICTaeGGNCBNCUA7RryKum+4TEx2hotlww8Q4qACqzEzbYRYww26kaPBn+/8h6NeAosMPhijuQKWGhV6pjF+km/UBA2C0tmtOMJttDcjle1ouA6iGIX1oz81Zcy4pFqCxcS/1gVk0prsvtsjm4MxANd96Y+ewpdyB2vSJMa5Xhp/xUq9PT5wLyppcgIrocxkX0uV+V970hZbz7H/1RKOp38p6odUEMltHlzJVkckjV/WdbHyhHumKpDt+Q4uaw/e7Qwyn3M4m4SrZqYLoltf2Kag/Gh04w1rgqqzk7/NdViVK+yu923WACA7uSUPQ2oUnMr7uiwmN8Wi7oEpGcrW4z9aQQzq/rlnV7tO/1zLbe6qVARhsoVm1mtFjKl6BiIGMx7Oi7WKcPshhK5L/z248qpaVnvARxFNWHdZXCSRgGOF4AgRp7+tNJwcxbJSibHvUS+mV31+JSAhk9lH9MQXklVfdLynV4kTZFKLEnm9Yb/rNG9GSDQQae4P1+8n0nUIK4WyCmL8JYQ2I+BWPZ1+ApBXrAnOgVMz1pq/MCBDu+HR70t6VBDImtTA3k30uMSGnHvSDXR9UtT02RAWo1GKhv3TfLB+/n5ZGuGqfavIYqxuod0d9bf2woXe9MnCw+VmVKI2NxYGLzrEFgb5z3y9RRfQn7fBnTanLGq+RChNdgyFRsq5fQ7DfGMX5U8qIW/G2pju2P9fvfg==
+        type : 2
+       code_elements :
+        internal_properties : CAAAAAgAAAAc1qr8RLPoFzTk6Q22E434ZiCuat/wSRSo0uf67LLVuGZxXXLDBAFBUP76db1roUMWh6isMhj8C0Heawt/
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 41
+     -
+       name : COL_bUseCurrent
+       identifier : 0x286e66cb1eb20217
+       internal_properties : CAAAAAgAAADxWz87ijLkBqAZ+yuwVVUOBKvWjaE3tQICd7OhmgJe7svaPh52CsCNHt9FywXFsBhox5VBi+zyloFNjkEYPWeRwuhe4ou4qO1sXN3znD+E1V3HketMb1HJ+dVekafj2gqSQXiLpvqEsBpmhCp+5zb9Zbal2/CUksKPHTRouehFS4nsV0eis6Ivim3cqdtRGG5UJSq3hAsau7qGHC4oPG2vwb6y
+       type : 5
+       content :
+        internal_properties : CAAAAAgAAADE/2hnIektQpne/zDLwE/2zZWfuJlwX+1PaW/2syGyLMxR21/K2gYDp20TYbv+/sBIyPam0SJ1sYN2AJ236C/q0rlCsMlcels4ySiKVURseVYz8Qk56hlKsJ5ZGjGpMqvMNFu5FfcBiEWQ9R56D9R3Tm7CWRAFSvCkEXCYULgxmbcpKqTu8jqxMJUxyWDkRA94kzxg/vpTsKu48G2P+imV6XprH2kLl6QAfSzn0ZesVQWnBkkjPt18AOjnBxdcqS7SMX4LR71k7z5t6k+HAbgB73ok7zr/F8yd+KBDNfTWOjh/fvr5yUg89NXTBXzol5wPBjOq3gqlcLBLXymB3cFK/qSI5kZ0i9+0La2uBMDcmdy/ZBWLsNBcf61l5mE0KbE1TDddkXtLEwz831dPur5lXIQW9qhx5na6ZJ1AWT4YkRxamNFp6qtDM9GSIIhGyZVoh7WxEU5WqlQofXzSx0TRoVelh4TeD1koBoXIWtLjZ60g3KPIRAV5iatuqPpURxqpa9Vdnw0bDFiszUP+9QabygbCNJDMbKl4erRTaemumPC0R2vd1nSSzfwu4ILqHQFzMqSZ72hwcC3YT5l7zKANFS9b53g95K/dZFJ0Ls66wpmy8mj6ylwTeo58i9LbWZftq812TthpOnmJi6InU6iqefMn2W+iP0qlXrelcnRqRkhj5U9TVWAbxzG6nmzEqOubQXtekMEXjOrGv5g4mosVwABmyDXQpUPy3S+YNTzE2uovLaAIl82Q6l6zABzZfcnSY6ITS0S4utKS2oTXLjsHKcoFox46hHX/zv9JUiYmgUJZ13cdKUy60KWZgPKk2bIonH12bYq3kY21ENjaVURDop+RjfAYK3faObefSka4PPW/6kJas59LACw=
+        options :
+         -
+           internal_properties : CAAAAAgAAACZ2nNNoNcq0CQOMUHaz5TYNxMCZWC6QYxp9OOAS5gisfGFpUq9b9l+oBtxP1JUQOVzTu5Kjj4QEQ==
+        type : 5
+       code_elements :
+        internal_properties : CAAAAAgAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 5
+        p_codes :
+         -
+           type : 41
+     -
+       name : COL_bUseProxy
+       identifier : 0x286e66cb1eb30217
+       internal_properties : CAAAAAgAAACE5HkSBFX4ReHa2/nc23DXeYLuqHSPYwuNQW8AiMox6t//O2Ui+YL0zjsC+XLSpO1T790S25Ew1HTNbIpg96EIbERWaaEDMKCWUE7X02nclufQWhOOYdQg/fozm1EZGTSzx4GdQfgwk1B0f6HqA6PbBR/O1HuKNABX27nCoRahxhRHtFMSXXI2xrezvQZsHKZUgq9WKUxJ/w0X8mivCJkcJ2ATTL53gXgIqiTNNogCdrNLRaYNP19B+Q/+EzehB+x/
+       type : 5
+       content :
+        internal_properties : CAAAAAgAAADE/2hnIektQpne/zDLwE/2zZWfuJlwX+1PaW/2syGyLMxR21/K2gYDp20TYbv+/sBIyPam0SJ1sYN2AJ236C/q0rlCsMlcels4ySiKVURseVYz8Qk56hlKsJ5ZGjGpMqvMNFu5FfcBiEWQ9R56D9R3Tm7CWRAFSvCkEXCYULgxmbcpKqTu8jqxMJUxyWDkRA94kzxg/vpTsKu48G2P+imV6XprH2kLl6QAfSzn0ZesVQWnBkkjPt18AOjnBxdcqS7SMX4LR71k7z5t6k+HAbgB73ok7zr/F8yd+KBDNfTWOjh/fvr5yUg89NXTBXzol5wPBjOq3gqlcLBLXymB3cFK/qSI5kZ0i9+0La2uBMDcmdy/ZBWLsNBcf61l5mE0KbE1TDddkXtLEwz831dPur5lXIQW9qhx5na6ZJ1AWT4YkRxamNFp6qtDM9GSIIhGyZVoh7WxEU5WqlQofXzSx0TRoVelh4TeD1koBoXIWtLjZ60g3KPIRAV5iatuqPpURxqpa9Vdnw0bDFiszUP+9QabygbCNJDMbKl4erRTaemumPC0R2vd1nSSzfwu4ILqHQFzMqSZ72hwcC3YT5l7zKANFS9b53g95K/dZFJ0Ls66wpmy8mj6ylwTeo58i9LbWZftq812TthpOnmJi6InU6iqefMn2W+iP0qlXrelcnRqRkhj5U9TVWAbxzG6nmzEqOubQXtekMEXjOrGv5g4mosVwABmyDXQpUPy3S+YNTzE2uovLaAIl82Q6l6zABzZfcnSY6ITS0S4utKS2oTXLjsHKcoFox46hHX/zv9JUiYmgUJZ13cdKUy60KWZgPKk2bIonH12bYq3kY21ENjaVURDop+RjfAYK3faObefSka4PPW/6kJas59LACw=
+        options :
+         -
+           internal_properties : CAAAAAgAAACZ2nNNoNcq0CQOMUHaz5TYNxMCZWC6QYxp9OOAS5gisfGFpUq9b9l+oBtxP1JUQOVzTu5Kjj4QEQ==
+        type : 5
+       code_elements :
+        internal_properties : CAAAAAgAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 5
+        p_codes :
+         -
+           type : 41
+     -
+       name : COL_sAccountName
+       identifier : 0x286e66cb1eb40217
+       internal_properties : CAAAAAgAAAB9Ld7/DSYRLqWqfXUKTaDTYJ8WBjfZ+0z+vmRINFEu0vMP+yxt9XM15B/9CyX49Boz0hFHQp4SEKKPwqVknGuXD4hm+e/56IWVaPuQ/aZ7jS//7ZqWFCDzcPAQIqiLoe8ymdYUzt9+DGXhinrCy08LbIKsuQPGEPfGA3YkNuKQu1bzs+2lw2XkV+4XlE53Ra33lVigXIWml0WGmmngCkTgXjDwhw==
+       type : 2
+       content :
+        internal_properties : CAAAAAgAAABzK4rK76eUdzD5tdQiCn2auhSrHHIfItmoDwNzPG+FOXrbpLFjbIvAeL+a9S7c7yCwIbviJv642pdODnoPFqyR8fuBJiHP/3Gr+JrD4xV+Mj7S1qPFnYRn5yK32bftSbWAbMeUp/hrYhJkDlXjfcV2BOWZDTjh7+n571LZ4c2r7WtpjpxQiXqxLkVufZlxt/nT1sLaArsfaR4g/7vyxWJImGE4NxuF2M77KO99jcrUMCLT+Z2saNRmm3048xj9FPGCjucnV08QkSi3v7d6kkeoG/xq4zoH7Z+aUUy73eGRWU2EXpN2pVQasAtglKXnASXQCZEP3vRnkdkXplptGbMDWDQ/JUIrlMPm+hRDH3C2xV0luY5/bP1T77yoHnoZhm4WY2Swl5aUBD+LQ2U+BW+Uoidqc497xuKPdAu/+CQrWB0xAMX49ObaWrJVNAGRb0nbj81wAqUuAzFm73E0uzy1vHSNKmycV1OriU9ZqN9KFwrf5XWnud9t+ZS1qDKN0hQauCOmrbcGs4iYBHSiyGwYqEsFnSe5ShoUjPyHddx+EliwgZtdzZtMOugFB5DShI0xiZvddZVehHQkoZ1j1a5ohHd1PlDmJgbfQoz+xK5Y2Y2PUjf0M20yE5RIFB1gWSHLmXQ3hXtWJ7I4VhWWjt0zRg+LEWYuBFp1LAxHT1lJMoCYgvDzVzDuischHt4bIeN++7W8UNTBK665oyKMJppSSzubPuq7qRmzcVpKKJOdNpovvXlRO3hFa34S+e4sxc9wyhligJTsCYDTPZavmp29F1fO3wWVZ9QRLm/Ob9YZ9KcudIFQzv3vMl/HWEtFCRpBKrkCjVPgCD1Rz8tQFYNjMqo6dTnfOQq9dRWcvBYM+mEoSjyWChjzs9lv83rURt4bOIa0ubvacqAoNkGxytmMMuhCmxeCqINEzJpyTAwTcfNVkNHd4LLppjgiECnoOt+LtJUfffYE/qIq242VCCn9IaEPftZzBEkuRDC7pk6dTRI1Y5dzQ3tLTf6b/CuT1+3AKbPIO6Sib/wAJkjmbITiYOA=
+        type : 2
+       code_elements :
+        internal_properties : CAAAAAgAAAAFnDAVMIyDegvJpWS9pPdiGE8K6YLDNSNnAq2aYLmNFV/97gOtEOm5vEnSZhkHoW6do7UffblQt9sGAg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 41
+     -
+       name : COL_sEmailAccount
+       identifier : 0x286e66cb1eb50217
+       internal_properties : CAAAAAgAAADRIT/t/YD4G/Oz2KK2aYrpMZQ8tWkDbCP4FGTyMC5kPSLMFULQIzB5SQlSm05Za7Qbw4hH6VvaULR1vnNNDpBVbMcvtJW07MgppUvl9WfAvsx5KBlycZ1KWnAT8PjqgBx7hpb9wPKPwwv5Be66VLnNqAptDW2nQuYMMxmEFJ1MZGzjdFrU0tyQ9txOpuKTadwGz2w9/NDzKFJ+jOe5vj+tMVWi9S20
+       type : 2
+       content :
+        internal_properties : CAAAAAgAAABzK4rK76eUdzD5tdQiCn2auhSrHHIfItmoDwNzPG+FOXrbpLFjbIvAeL+a9S7c7yCwIbviJv642pdODnoPFqyR8fuBJiHP/3Gr+JrD4xV+Mj7S1qPFnYRn5yK32bftSbWAbMeUp/hrYhJkDlXjfcV2BOWZDTjh7+n571LZ4c2r7WtpjpxQiXqxLkVufZlxt/nT1sLaArsfaR4g/7vyxWJImGE4NxuF2M77KO99jcrUMCLT+Z2saNRmm3048xj9FPGCjucnV08QkSi3v7d6kkeoG/xq4zoH7Z+aUUy73eGRWU2EXpN2pVQasAtglKXnASXQCZEP3vRnkdkXplptGbMDWDQ/JUIrlMPm+hRDH3C2xV0luY5/bP1T77yoHnoZhm4WY2Swl5aUBD+LQ2U+BW+Uoidqc497xuKPdAu/+CQrWB0xAMX49ObaWrJVNAGRb0nbj81wAqUuAzFm73E0uzy1vHSNKmycV1OriU9ZqN9KFwrf5XWnud9t+ZS1qDKN0hQauCOmrbcGs4iYBHSiyGwYqEsFnSe5ShoUjPyHddx+EliwgZtdzZtMOugFB5DShI0xiZvddZVehHQkoZ1j1a5ohHd1PlDmJgbfQoz+xK5Y2Y2PUjf0M20yE5RIFB1gWSHLmXQ3hXtWJ7I4VhWWjt0zRg+LEWYuBFp1LAxHT1lJMoCYgvDzVzDuischHt4bIeN++7W8UNTBK665oyKMJppSSzubPuq7qRmzcVpKKJOdNpovvXlRO3hFa34S+e4sxc9wyhligJTsCYDTPZavmp29F1fO3wWVZ9QRLm/Ob9YZ9KcudIFQzv3vMl/HWEtFCRpBKrkCjVPgCD1Rz8tQFYNjMqo6dTnfOQq9dRWcvBYM+mEoSjyWChjzs9lv83rURt4bOIa0ubvacqAoNkGxytmMMuhCmxeCqINEzJpyTAwTcfNVkNHd4LLppjgiECnoOt+LtJUfffYE/qIq242VCCn9IaEPftZzBEkuRDC7pk6dTRI1Y5dzQ3tLTf6b/CuT1+3AKbPIO6Sib/wAJkjmbITiYOA=
+        type : 2
+       code_elements :
+        internal_properties : CAAAAAgAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 41
+     -
+       name : COL_MessagingType
+       identifier : 0x286e66cb1eb60217
+       internal_properties : CAAAAAgAAACk5vTCYekH2fpissATIHzVYYjo0XDGyftnFc/F+upuJBeo/HgEoxtvSA15FrnQFG0TteisEmVkZut/4wrFC38wXHmwg6YuVz4KIAwMA707rYfERTKQvXNjTBj6Ow8doH2JdkWpFPHll+nKTrbxTXdfa2vCvIM2I9rhV15mnp0emEz3uCSHEE3YRCoXxnG9yOUCkYjzpLHMfWSuEZ1XIQbG9mvn
+       type : 2
+       content :
+        internal_properties : CAAAAAgAAABcRD0UNa0BoaFzceggbWzUqhfjTrXvzHvUWEZgNLzQ5owc8WetffenWB7gxNjLzdBerKkptYmQrqIel5VHkeQUFix8yOShP5SAQRIHnjA0G0xJg8SLDnUzGLHl1qJWV6U6uIUvF412rqwei7vEpm258uopGKCuJvQUuV4Ym16XbV3ooBfIlYLF/qS0BWsspLXHfbMxnR4L3D0pCsjp9Ffs0d1/IkTc/EVQz706iHMZWynghiPWthPQdCl3I+KYuyJux1ra7DHjwCUgNg3QWUSLj+DLMx5/b6ylecmxZWfh2HIpKnZZhrNINJF0aHqxsLgZYx9d8TnEZmXzl0gRPLEgKkpGDYb8zoJouS+a/fRp11EcpkuLhQLYR+QbsUo2kybxR7F5xE8XCHzZ0A/PAPUaL5XG+dvea/oeOMtwbMOYQ+ztASDcz15hT676rTeNSbCVosy8DUVmiXEkJa5sxifOOMGEITDu0aw9P1CVxYHxD/YXhcLRwh1aelcJOQoSQSGv3XzjXrIyLpiXoQz8soREp4sW39236QEgsy/5eczyUj36eCGXN6DJqnuE0TpE8KWKmYLzdfk7dSYlxCM50xxGC4VScATeq9ONn22M3LJKC7pJqeMmrdITNb/bJl0MtRns6QX370W5Eurbf50++u2vK2kKwfgwYbO3J83VfR+DRKmYzzS1KZvV3lwW8I4PSQfjUbY8HhIiYJyS7AIU+sDAtOf6/hx1UtrtKsWcGM/Jvrv33Kcxd3+UT0khbRjmBWNFGigSGpbX8HSYUNw/5rcf3JNFp3e39qNPLWCI2XB/+rAaZ/8MJtbwXuqUbsmrN4AMMO582VtJoc/SAFN+87vvy/JLgRXfygsBQMJaMkTGrC6SHXYkYJHowWw6f0DSyNCKdkcWb6lt2Wxlk5XVwoHwqWzLJZ3Q7zaLfkwbt4W+ajuEZC6IoS7nnyg8SYLT0jJzoe01XyN25qNUWH84gczmeR1XrR9yew9PFtDmFYd51dWWD4Z/lHcQF6Rdwh8nAr8eihX0IPYgVHhzJHPnBYvDsPkxBg==
+        type : 2
+       code_elements :
+        internal_properties : CAAAAAgAAACOH+wHVW0K6jDHJ7CLzQoK2Jw842Dk0MgObUnOXmSmkDO6/Dy1YvKh17o99N0zJgElcr1K3lwA0ybQQDztqg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+    type : 9
+    controls : []
+    code_elements :
+     type_code : 9
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        type : 230
+        enabled : false
+      -
+        type : 241
+        enabled : false
+      -
+        type : 263
+        enabled : false
+      -
+        type : 262
+        enabled : false
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+      -
+        type : 224
+        enabled : false
+  -
+    name : BTN_Cancel
+    identifier : 0x286e66cb1eb70217
+    internal_properties : CAAAAAgAAAD9dsQm3vZ+961tVVYV4jTyOSjY4CnkXPOG+I4o0pkNY5fyBuM1OjslOwpH4OeAIvepJn0xC3iflBNQr6GKu8rHZ1Zh1z20vxz3o9e1kCoh0AUnPaEFdEqpdQiu1KKy9ZDUTFCEoM9a1MGI7H+2vYSHPX1nX+a6fLj+WMSBtULBedUI/vf50F1bP3CTXOlkDiA7mr4xsCcS7PddUajoXs0oYU75F2+0ZVoqZuA2x69cdRVXmDgJU6SN6UsYV99+pU0QUn2yAHWdpfirIJxwVMnKlOdbPVS1bOnrQwklhogRcn2m9TUl7n5rMLi65mb5ZP8FRQhtiXjRDyTaIBGcoXR96vara0lWER56Jj98ggPNtLCBRSa3tfLiNvMYm2DcVMTlys+pD5aqF4zmII2zR0QpQvSHKeAs9HFUmhboRGB8hnEni11kye70K3uaPGiH2USMzleGpUSShDK9LLJSMvU5wNlc/ObUkQj3up+JI4x8Os59XwCphLkUWYXlg9Ycms5Uos3vJr/806xrlY+/7oKcwTPhCVA8RgITKAMV2SQO4ybbtpQX5coo9DeUbkwP2Q76tSkbdWTaELbe2e5C746mgUy84wyCc9MTDKSCGHmaBZIFSm+8/f1cF6F+BtbOoXcViDz6PA2OwsLdp5wH1Mj7J0Y5HWbaY9v3grVUpwBguCvMLvHCH9dB8dt1F2BpN93J/UGKRhwH+/W3Dcy6WJuUEWiQL8p8HcQs7BPnGyR2V0fxoLi0Q+a/qKrpmRbFBUu5ix2DPNCtm8qCgNJ5MaYhZkzLu5VWlrFE061KFZsMm4zRRQ+h2eDF/JdsdOgEhXmPRmwIMyI9QAKCPeBSCsD9Sxvzj+b1Qq6ka1JiggLkXPEl/y3ad1uwxwZSCYLS+uHq/Ad5l7nLTEAplAM8uyi+iNKuoYsJxUnKdYqW7hTokkOW4wcJNJ+zcowRsIpMHyceeZfhMT6zVuYUbfre8JNJhYdk0eRYwiqXfJJV1DRM7X+qqzfq/h2rve5eBtLdk+Kl4KBfxLqfSe/BquWKoGBDTUNqiQKZ
+    properties :
+     x : 408
+     y : 303
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADQZyvpRjJZltgKBVFD+SKMukTEU1n2G2jmPSjnx1ZKdSF2vB36egNKcReVrz/xwpIZdIpZoyUu0CjPxu+MpGLAedmE/39iAmJIcu72BpKoWkpseLXy2lnJGPSMFw==
+        code : |1-
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_OK
+    identifier : 0x286e66cb1eb80217
+    internal_properties : CAAAAAgAAAB3bk9zJGbrOeG30RAx/5i8k2yVnp8LP7c9Z8AmJ3YpyeV+VxhyiC6iaYLKc0o1my+ja4idGI7POnv1EueQH9kZAVPjxRuW7CnXRLoYepW5NE9N56xFjmd/dVPkCBkV4BiDs4AUo3bOENkN89T2Vs93efpWG93igk1jLE2cLyPcWe5bIOtm+wTLH5xGMmYEiZpz44tCJjtUzQDHPcSW54K1pyTTnkwUhd8J6RIJxm5ZtB799uj+wM4ngD0S0uzr6HX0t5LPoJwjINvxJIzziQ5/ZQGyshWBTVSxv2q0/MnRPWyo0Luv30/Um1lKr/L2KxxnzWzq1pGWvugIPZn5OpTezbzhcw+qfxFfSMQFRd5PxBA5OiNdQA+cQVVlhjuw1pPC+I4cHG561vTdKjgfA2JmPpgjvE6NFtgU/Ro/de93lCBbB7WoWKDKIu26GOBK19eYK0d4WsfSxqSBV9h+BzC0JfiZxeldNXkpc0D6CwnyzMb3KrhfljQv+3iJ/xZgwxZoN6hKFCM8HGWlL4m8CUPd1OeUnCso/K3uy7Vwgkkgs9G4eM7Jbp2b695bHocHZjnLE/OxM9RIqztbYuNZczyJnM8N/1Pq6y9cPanvjKmlWpFXsT56B9tD9lWLDWBOIqtcrvQY24/xmakWQqPjotncb8JNNrdD7XArsd+N+aPyllhIOUbod2yJBT6oXRTDtRbucnq7EFamGrBZ8rYwY1b3EepwPJUO6mhWZBOJ0D41iInzsC7/x4negd0aciSTWYRYi+63sPmkhNWLPzkkrWHchXBWGLTbNNU8UJIk9JRgITuT7c7BAbQaMy8R+A+Yc9iVWPC2/emiqQOdG1GPdOXKY7zlK08zkm5eEvjXY5UZULxy/J1o1MG+755Y+KzFyOp+uQZSIpAtpFDAlJoojC5rtVhE26d4wWiMdRjyMFxvBtD13xYhjhNoY3g98/oC4lLZU6aceiI8KNQOvpbRA3129esNsaxVeJGxLIXr2Tca8smh5U0vXvTYwSu/uf7BGNs=
+    properties :
+     x : 322
+     y : 303
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAACOiAr0E0AIYJiozcudojkDJyWX8nOlLeWjWqNXeIs9+979brro20zqHFLop7wniv5XCXiOJKu9+2u3cLjlLXwk5fUGR/zs5suVPlgMnb3lx0+e6zbiKUdANlmorYr+mXaxKGV8C0hRM04t1G4GsvkAwyZOhAUh9j958scwzSGbQKJodWj2fBVfKix1bJfNGtRpMjjjjRz/R2ofCdJxVRSjtFi8rKTxtKuwNj6WsUWzw1YqQOkqdXJ75q3OWTMLT+sl0XBbXeVd77+Lgpvbx93EDmeBcg==
+        code : |1+
+         nAccount is int
+         sPOP is string
+         sUserPOP is string
+         AccountInfo is a xmlDocument
+         
+         
+         // Browses the table
+         FOR nAccount = 1 _TO_ TableCount(TABLE_OEAccount)
+         	
+         	// If the account is configured to use the proxy
+         	IF COL_bUseProxy[nAccount] THEN
+         		
+         		// If the account does not use the proxy yet
+         		IF NOT COL_bUseCurrent[nAccount] THEN
+         			
+         			// Create the association
+         			SWITCH COL_MessagingType
+         				CASE "OE"
+         					sPOP = RegistryQueryValue(COL_sAccountLoc[nAccount], <§$0001§>)
+         					sUserPOP = RegistryQueryValue(COL_sAccountLoc[nAccount], <§$0002§>)
+         					
+         					// To do so, UserName becomes Server:UserName
+         					RegistrySetValue(COL_sAccountLoc[nAccount], <§$0002§>, sPOP +":"+ sUserPOP)
+         					RegistrySetValue(COL_sAccountLoc[nAccount], <§$0001§>, sGetListeningAddress())
+         					
+         				CASE "WLM"
+         					AccountInfo = XMLOpen(COL_sAccountLoc[nAccount], fromFile)
+         					IF ErrorOccurred = False THEN
+         						// Modifies the information about the POP server and about the associated user
+         						sPOP = AccountInfo.MessageAccount.POP3_Server
+         						sUserPOP = AccountInfo.MessageAccount.POP3_User_Name
+         						
+         						AccountInfo.MessageAccount.POP3_User_Name = sUserPOP +"@"+ sPOP
+         						AccountInfo.MessageAccount.POP3_Server = sGetListeningAddress()
+         						XMLSave(AccountInfo)
+         					END
+         					
+         			END
+         			
+         		END
+         		
+         	ELSE
+         		
+         		// If the account uses the proxy account
+         		IF COL_bUseCurrent[nAccount] THEN
+         			
+         			SWITCH COL_MessagingType
+         				CASE "OE"
+         					// Remove the association
+         					sPOP = RegistryQueryValue(COL_sAccountLoc[nAccount], <§$0001§>)
+         					sUserPOP = RegistryQueryValue(COL_sAccountLoc[nAccount], <§$0002§>)
+         					
+         					// Restore the former parameters
+         					// Split the identifier
+         					nSeparPos is int = Position(sUserPOP, ":")
+         					sServer, sUser are strings
+         					IF nSeparPos>0 THEN
+         						sServer = Left(sUserPOP, nSeparPos-1)
+         						sUser = Middle(sUserPOP, nSeparPos+1)
+         					ELSE
+         						nSeparPos = Position(sUserPOP, "@")
+         						sUser = Left(sUserPOP, nSeparPos-1)
+         						sServer = Middle(sUserPOP, nSeparPos+1)
+         					END
+         					
+         					// And replace the components in the registry
+         					RegistrySetValue(TABLE_OEAccount.COL_sAccountLoc[nAccount], <§$0002§>, sUser)
+         					RegistrySetValue(TABLE_OEAccount.COL_sAccountLoc[nAccount], <§$0001§>, sServer)
+         					
+         				CASE "WLM"
+         					AccountInfo = XMLOpen(COL_sAccountLoc[nAccount], fromFile)
+         					IF ErrorOccurred = False THEN
+         						// Modifies the information about the POP server and about the associated user
+         						sPOP = AccountInfo.MessageAccount.POP3_Server
+         						sUserPOP = AccountInfo.MessageAccount.POP3_User_Name
+         						
+         						sPOP = ExtractString(sUserPOP, 2, "@")
+         						sUserPOP = ExtractString(sUserPOP, 1, "@")
+         						
+         						AccountInfo.MessageAccount.POP3_User_Name = sUserPOP
+         						AccountInfo.MessageAccount.POP3_Server = sPOP
+         						XMLSave(AccountInfo)
+         					END
+         					
+         			END
+         			
+         		END
+         		
+         	END
+         	
+         END
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x24a1524e1505cd59
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAvUiXDNc1jdLLMZI3eV8QhuuHAldL7MvjbBbE4M9WPFspNNfA4qt7Y96ccbArPZw8/FCwo6sCkcFZ8FAlnNtX1QdN7Nv6S2VL7+wN9d0lTWPEavdWBV/BXWxnim76pBBc=
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAAC0BFWCNRwIYxnHo+sebUjptPRZQ78QkIBQu5d03nFo5qzCkQnlYWOwYKwJh61dN8v19s4yS9qdhx3+V9OqfSwSWZWTEevjtB36dODpsjw/vtS9Uwi/foTDMHoW0deBIopCZpQuqdpkWmMB2EPeYdXBxxTYP7V6kG1aoZHCYmyTBXd391A9Xm4Gxy3fS0n3HKj7FoyVZKP1ssKSKU7LYVKeADIhRLbCjdSibE8pansWnUWsstwe4rTUeStLmeLwCE5ES2nGrQ4BBKT+e844M7Adwgjmrwd7kYrlMTy55cQRE+3d6vJBfLMacizKfj9DsZ0KHX1ZmqZbFXR+4CkJYNRwoFODjSC1Jht1BRVb/SzBhrF3TuYljvuOFSR+Ly8T4FxvaxxfN0PJkTw1i21gb5HCzMvBfBK10YkSiRRt2JlTfLXrGK7wywvZWrCpVJvtG6y2ip8Pe5Lyd+zMMqYIRRIlhfEzTISgvY6LEiNfqpj4bmyobVnHymApagFi/jJ0wf5YkNHftwaaUlE2wcGYMAoZo3VNR7FswcR2hEWrDw==
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE WIN_ConfigAccount()
+   -
+     internal_properties : CAAAAAgAAACmoVLMw6IVaNN+EzbCZ6RfCxh5pVzFPCZhG88znScG1z/Y/PkdJeeP3irLcbXCN5RHeNd369Fx6IvEJqGLFE9HzBcOG+6ib4SBPfY0gUSlaVKJGNF5IaHvg1Ejosjz6t2GLW9jk83MVZZ/lw==
+     code : |1+
+      // Outlook Express
+      ReadAccounts_OE()
+      	
+      // Windows Live Mail
+      ReadAccounts_WLM()
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     code : |1-
+      
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+  procedures :
+   -
+     name : ReadAccounts_OE
+     internal_properties : CAAAAAgAAADs7lJkLTukaL6vWK5B8jMXHthJ1PYc+n88bDPoZ+YkzUmOYk6xw6QMD/cmygGk+DxaXxifkuiYxPcZVUMnAFjnmQPDslkoss8EAGbRQQnXiMZwpB5n2nYxz369Wo3nWk8I13pfAUXNSbf7GDAxD+ufGTw5gomIpojudyhhetghi9qC90C+4KHKxZe4S5uZnDqAcsz97cjzytL1xRCz2kN+xTqbA287iz5E7A9awg6KQ6vl7Gte36LoY/w9D3hEoJH2v9iS39kC6cdp2AXAugEFP4VCe78=
+     procedure_id : 1760457526457008648
+     type_code : 14
+     code : |1+
+      // Summary: Reads the available Outlook Express accounts
+      // Syntax:
+      //ReadAccounts_OE ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE ReadAccounts_OE()
+      
+      
+      // Browses the registry
+      sKey is string = RegistryFirstSubKey("HKEY_CURRENT_USER\Software\Microsoft\Internet Account Manager\Accounts")
+      WHILE sKey <> ""
+      	
+      	// Reads the key
+      	sPOP is string = RegistryQueryValue(sKey, "POP3 Server")
+      	sUserPOP is string = RegistryQueryValue(sKey, "POP3 User Name")
+      	sProp is string = RegistryQueryValue(sKey, "Account Name")
+      	sEmail is string = RegistryQueryValue(sKey, "SMTP Email Address")
+      	
+      	// If it's a POP account
+      	IF sPOP <> "" THEN
+      		
+      		// Is the account read already configured to use the proxy?
+      		bUse is boolean = ((Position(sUserPOP, ":") > 0) OR (Position(sUserPOP, "@") > 0)) AND (sPOP ~= sGetListeningAddress())
+      		TableAddLine(TABLE_OEAccount, sKey, bUse, bUse, sProp, sEmail, "OE")
+      		
+      	END
+      	
+      	// Next key
+      	sKey = RegistryNextKey(sKey)
+      	
+      END
+     type : 458752
+   -
+     name : ReadAccounts_WLM
+     internal_properties : CAAAAAgAAABjbEB3H7u662cNgUwjjVXYUaoTi3iV1tsvzHya32Bjo+laBTLEKoR79UGoc35Tq0B6W4WlWSwMmrJO+p+YlwijDQVynXnKxqQdVG3dtiGNp923MPZWCG2uU72omPnpfkjhIQpmtp6n5nTqJP0OZXSNIbKkIcgAPiOCoiRUjQZSq2bSZMlLJrvlcRoENmgPDwNDbcRxTShxzZRPqYJnc9qG12ZkzqhFlHnvQLaelH1DUaA+Mn/BDZNsbwLW1BVq2n9w8A==
+     procedure_id : 1760457526457074184
+     type_code : 14
+     code : |1+
+      // Summary: Reads the available Windows Live Mail accounts
+      // Syntax:
+      //ReadAccounts_WLM ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE ReadAccounts_WLM()
+      
+      sDirectory is string
+      sListFile is string
+      AccountInfo is a xmlDocument
+      sUserPOP is string
+      sPop is string
+      sProp is string 
+      sEmail is string
+      
+      
+      // Defines the default directory for the files of Windows Live Mail
+      sDirectory = SysDir(srLocalAppData) +[fSep()]+ "Microsoft\Windows Live Mail\"
+      
+      // Finds the files whose extension is .oeaccount
+      sListFile = fListFile(sDirectory +[fSep()]+ "*.oeaccount", frRecursive)
+      FOR EACH string sAFile of sListFile SEPARATED BY CR
+      	
+      	// Valid path only
+      	IF sAFile IN ("", EOT) THEN CONTINUE
+      	
+      	// An oeaccount file is an XML file and therefore it can be handled like an XML file
+      	AccountInfo = XMLOpen(sAFile, fromFile)
+      	IF ErrorOccurred = False THEN
+      		
+      		// Retrieves the information about the POP account
+      		sPop = AccountInfo.MessageAccount.POP3_Server
+      		sUserPOP = AccountInfo.MessageAccount.POP3_User_Name
+      		sProp = AccountInfo.MessageAccount.Account_Name
+      		sEmail = AccountInfo.MessageAccount.SMTP_Email_Address
+      		
+      		// If the POP server is not specified (case of a .oeaccount file for reading news for example...)
+      		IF sPop <> "" THEN
+      			
+      			bUse is boolean = ((Position(sUserPOP, ":") > 0) OR (Position(sUserPOP, "@") > 0)) AND (sPop ~= sGetListeningAddress())
+      			TableAddLine(TABLE_OEAccount, sAFile, bUse, bUse, sProp, sEmail, "WLM")
+      			
+      		END
+      		
+      	END
+      	
+      END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : ParamCompteOE
+resources :
+ string_res :
+  identifier : 0x1030aaf5003acb20
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : HKEY_CURRENT_USER\Software\Microsoft\Internet Account Manager\Accounts
+     index : 0
+   -
+     text :
+      en-GB : POP3 Server
+     index : 1
+   -
+     text :
+      en-GB : POP3 User Name
+     index : 2
+   -
+     text :
+      en-GB : Account Name
+     index : 3
+   -
+     text :
+      en-GB : SMTP Email Address
+     index : 4
+   -
+     text :
+      en-GB : ":"
+     index : 5
+   -
+     text :
+      en-GB : "@"
+     index : 6
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

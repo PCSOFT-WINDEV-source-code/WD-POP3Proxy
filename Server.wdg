@@ -1,0 +1,256 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : Server
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x186e66d402f42494
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAACOE91kCF6A6l776czklXA1t3SQzEZoGsLTW0jT1rk8RZDMeHzo4px1DLFc4w3TPuoSppFG4WY5Rcu6OZ0RV5++AN3W8PCwu1gM5DH/xP5Ros9zFIDPxF12Owo9qkGKpWl+A5R7NyykDbEwL8wZ4BV3R9JVNJEJruMn4HEg6je4RcTJ5ktSvIpBICuu2sN4kVr9bJLLtZ08QIVuSUpn8OThh52ywogywMioJdeVVBbwJ3BGfqndB1nfPr0eE9G70cWoPuHZ3UP8WSjlWv01sKMy2v0P5cOAg7wl2ni8+cgUapy6IpdhZiuela7EaFKcY16reEwPGdwPP4yvpMTRdDxbZPGr0BceByRKa0jocgVlweUmKwUh
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      GLOBAL
+      	gsListeningIP is string = NetIPAddress()
+      	gnListeningPort is int = 8080
+      	gnReport is int = CN_STATUS_STOPPED
+      
+      CONSTANT
+      	CN_STATUS_STARTED = 1
+      	CN_STATUS_STOPPED = 0
+      END
+      
+      ThreadMode(threadCriticalSection)
+     type : 720896
+  procedures :
+   -
+     name : sGetListeningAddress
+     procedure_id : 1760457565117162644
+     type_code : 15
+     code : |1+
+      PROCEDURE sGetListeningAddress()
+      
+      RESULT gsListeningIP
+     type : 458752
+   -
+     name : SetListeningAddress
+     procedure_id : 1760457565117228180
+     type_code : 15
+     code : |1-
+      PROCEDURE SetListeningAddress(LOCAL sIP is string)
+      
+      XLog(<§@3e9fbcd617f71ca80000§>, <§@3e9fbcd617f71ca80001§> + sIP)
+      gsListeningIP = sIP
+     type : 458752
+   -
+     name : SetListeningPort
+     procedure_id : 1760457565117293716
+     type_code : 15
+     code : |1+
+      PROCEDURE SetListeningPort(LOCAL nPort is int)
+      
+      XLog(<§@3e9fbcd617f71ca80000§>, <§@3e9fbcd617f71ca80002§> + nPort)
+      gnListeningPort = nPort
+     type : 458752
+   -
+     name : nGetStatus
+     procedure_id : 1760457565117359252
+     type_code : 15
+     code : |1-
+      PROCEDURE nGetStatus()
+      
+      sStatus is string = (gnReport = CN_STATUS_STARTED) ? <§@3e9fbcd617f71ca80003§> ELSE <§@3e9fbcd617f71ca80013§>
+      XLog(<§@3e9fbcd617f71ca80000§>,<§@3e9fbcd617f71ca80004§> + sStatus)
+      RESULT gnReport
+     type : 458752
+   -
+     name : StartServer
+     internal_properties : CAAAAAgAAACyPf5YyN7aOZQka2m2CHMqRTIesmalAYbuMFDJuQ5ixzAt+0o5iMS53obSUHbUIRo+DgYbniSxAz6aceZseoy99YbwpJAsm64kTK6d5TK5oldEJPJW+8BfLUIdLQjVTWgUw1TIfV4iXVHMx3i5cVwFisjeq2XuiS4hnn3JLsYGd+M95be0F4ZjGbYYIIUBJPw+DC/OQUo=
+     procedure_id : 1760457565117424788
+     type_code : 15
+     code : |1-
+      PROCEDURE StartServer()
+      
+      gnReport = CN_STATUS_STARTED
+      XLog(<§@3e9fbcd617f71ca80000§>, <§@3e9fbcd617f71ca80005§>)
+      ThreadExecute(<§@3e9fbcd617f71ca80006§>, threadNormal, ProcListeningThread)
+     type : 458752
+   -
+     name : StopServer
+     internal_properties : CAAAAAgAAAAgS8wabyTCUcqK55WKdstitxRUzArTJT4wWpS1tdzKKwZT8YQBUnD9YNg6uI4WtY4s3Ly1No41k5gU7a4kJEz9t0i6oiwKr2rGnuoIKvsUR9QpB6+bvIGeagdinJFyzPGBYPd9wjcjXK5pRAMCPq/S61nt5P4rLtWeW1qU039toJxmkHQ9vOM+OlcZ/zJ6A52rym0AE7g=
+     procedure_id : 1760457565117490324
+     type_code : 15
+     code : |1+
+      PROCEDURE StopServer()
+      
+      gnReport = CN_STATUS_STOPPED
+      WHILE ThreadState(<§@3e9fbcd617f71ca80006§>) <> threadUnknown	
+      	XLog(<§@3e9fbcd617f71ca80000§>, <§@3e9fbcd617f71ca80007§>)
+      	Multitask(-100)
+      END
+      
+     type : 458752
+   -
+     name : ProcListeningThread
+     internal_properties : CAAAAAgAAAB2pqK1+wydDW26VkLpTCX1BxpuO96bdkHVDdDZoyn/avXGQ1UwT2/7GudwzEIcGV3PcKOvHdYQtQevz8JBst8s1y7Sn96e/vq9bEHH8zVDYgOJC/Kkmf9sfWOlvEBpXljLuJXWcUJfKD8BC2Ul0VUbebmZQfli0KdzF08k6ugth5s/K+CLDqbjoN6hHOB+yiJrM/21/kwo6H01TU9VfOWaTjk1
+     procedure_id : 1760457565117555860
+     type_code : 15
+     code : |1-
+      PROCEDURE ProcListeningThread()
+      
+      // Create the listening socket
+      IF NOT SocketCreate(<§@3e9fbcd617f71ca80008§>, gnListeningPort, gsListeningIP) THEN
+      	XLog(<§@3e9fbcd617f71ca80009§>, <§@3e9fbcd617f71ca8000a§>)
+      	gnReport = CN_STATUS_STOPPED
+      	RETURN
+      END
+      
+      // As long as the status is set to started
+      WHILE gnReport = CN_STATUS_STARTED
+      	XLog("INFO","Wait for connection"+gnReport)
+      	IF SocketWaitForConnection(<§@3e9fbcd617f71ca80008§>, 1000) THEN
+      		sChannel is string = SocketAccept(<§@3e9fbcd617f71ca80008§>)
+      		ThreadExecute(<§@3e9fbcd617f71ca8000b§> + sChannel, threadNormal, <§@3e9fbcd617f71ca8000c§>, sChannel)
+      	END
+      END
+      
+      // Destroy the socket
+      SocketClose(<§@3e9fbcd617f71ca80008§>)
+     type : 458752
+   -
+     name : ProcRequestThread
+     internal_properties : CAAAAAgAAABccwEu8rKT5qAoP0P2JtFKybjlg/Wz032yuDlXx+Cq3FIGCmzslhZJPqdYZ7w/Df+Vwh4eTLKpIGQ9nODcimBUey4vsZ4IXrqV4uJPJyhVs/7cfEMcUgG6paQENar6Hkv3oqg334E1ip/kKgb1oqXAX0loIJFbNvnzUtRLVGvdZFEvBkuLWYyV/POAsTS7Ok3T+D2t87ZFS/5Pt28gnjrkVs7Rpg==
+     procedure_id : 1760457565117621396
+     type_code : 15
+     code : |1-
+      PROCEDURE ProcRequestThread(LOCAL sChannelName is string)
+      
+      XLog(<§@3e9fbcd617f71ca8000d§>,<§@3e9fbcd617f71ca8000e§> + sChannelName)
+      bCurrentSession is boolean = True
+      
+      // Allocate a structure for the context of the session
+      clSession is object CPOP3Proxy(sChannelName)
+      
+      // The query ends with a CR character
+      SocketChangeTransmissionMode(sChannelName, SocketEndTag, CRLF)
+      
+      // Welcome banner
+      SocketWrite(sChannelName, clSession:sBanner())
+      
+      // Process a session
+      WHILE clSession:m_bCurrentSession AND gnReport = CN_STATUS_STARTED
+      	// Read the query
+      	sQuery is string = SocketRead(sChannelName, False)
+      	XLog(<§@3e9fbcd617f71ca8000d§>, <§@3e9fbcd617f71ca8000f§> + sQuery)
+      	
+      	// If a query was received
+      	IF sQuery <> "" THEN
+      		// Analyze the query and answer it
+      		sResponse is string = clSession:sProcessQuery(sQuery)
+      		SocketWrite(sChannelName, sResponse)
+      	END
+      END
+      
+      XLog(<§@3e9fbcd617f71ca80010§>, <§@3e9fbcd617f71ca80011§>)
+      // Close the channel
+      SocketClose(sChannelName)
+      XLog(<§@3e9fbcd617f71ca8000d§>, <§@3e9fbcd617f71ca80012§> + sChannelName)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Serveur
+resources :
+ string_res :
+  identifier : 0x3e9fbcd617f71ca8
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : GENERAL
+     index : 0
+   -
+     text :
+      en-GB : "Change of Listening Address: "
+     index : 1
+   -
+     text :
+      en-GB : "Change of Listening Port: "
+     index : 2
+   -
+     text :
+      en-GB : Started
+     index : 3
+   -
+     text :
+      en-GB : "Status of Proxy: "
+     index : 4
+   -
+     text :
+      en-GB : Start of listening thread
+     index : 5
+   -
+     text :
+      en-GB : ThreadListen
+     index : 6
+   -
+     text :
+      en-GB : Wait for the listening thread to stop
+     index : 7
+   -
+     text :
+      en-GB : SocketListen
+     index : 8
+   -
+     text :
+      en-GB : ERROR
+     index : 9
+   -
+     text :
+      en-GB : Failure creating the listening socket
+     index : 10
+   -
+     text :
+      en-GB : RequestThread
+     index : 11
+   -
+     text :
+      en-GB : ProcRequestThread
+     index : 12
+   -
+     text :
+      en-GB : QUERY
+     index : 13
+   -
+     text :
+      en-GB : "Start of thread for processing requests - Channel: "
+     index : 14
+   -
+     text :
+      en-GB : "Query: "
+     index : 15
+   -
+     text :
+      en-GB : THREAD
+     index : 16
+   -
+     text :
+      en-GB : Closing the channel for processing requests
+     index : 17
+   -
+     text :
+      en-GB : "End of thread for processing requests for the channel "
+     index : 18
+   -
+     text :
+      en-GB : Stopped
+     index : 19
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

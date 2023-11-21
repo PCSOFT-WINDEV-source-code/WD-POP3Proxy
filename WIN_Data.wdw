@@ -1,0 +1,1164 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Data
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_Data
+ identifier : 0x286e66c81dd2f4c9
+ internal_properties : CAAAAAgAAAC5Izc7QmEKR528U0vQXi9q91OTxpWv5qzzUOqTL0FHk9tmRMI2Pd15rWRfQizVqSAb8l6Psbc35OWd83VHAibWVZTyhPRX000y+MjFiktsMsityfSN72ByFxIgfumqgIMJiS0dU7y/U/DIVOs2bOWUhKPcIi818q3bSmjo1Vu0Knh0wrAfrgF5Eu57Tu9UK6k2LXqRYWOKU6IsIWMrVJ2E73nlwf22wdHiByOknaiBRy5rUGXPbhVEpn3AOrWG1owzq3VMy/t9lYGNXOUJFrAhvNkA9CyQs42PC8z3X2dv21w2gOVX9hzVbqUBiKDhes8qiT777M++5NTJ51TECkSYsf2NMkPEm46TzMzUjn1LraYQevmxmYGcFhO5SflISA9249Dd2E43vhNoRZWYrpc2kiS5XnHL/snpw7SBaJ9llLeJEq+IKZdODhRES7LCdL49ZNCdAUGdHDGhHOmroxm2aIojZLr82SKEC8t1mfS2tQdNNVBtjufNlrIC4utoqwsjGbB8shqjCy90OwK6g/XQYjHwzuF56QwlBVgnrNm73oedELMq8d7rTs6ucOwDxqdIHNo8m2y14rtE2Q+E7+0Q6hDT4x1VDTSVCYd8biXo/UPAth0Sk877VnLLBquHyg7hfOS1FSC/QXYwm0sI1UvG+VRFDoJiWAeayFjk8zyNg7Ys1U77ny6DLUaVKsAPIcrp64bIAcqGT4hTysJZniCWrM40eu2ACDvrb5HdambdM9BKwlnHzRo=
+ properties :
+  width : 510
+  height : 238
+  widthClient : 508
+  heightClient : 206
+ controls :
+  -
+    name : STC_Explanations
+    identifier : 0x286e66c81de0f4d9
+    internal_properties : CAAAAAgAAAARFjmB3nTMvx1jk70/q8C/ZbjLVcZpiM5l/of/HJpaJ5jQf+CvOgTDLr9DuboOUfpjrlQo3fBLbceaQ+88kKnSGUcSWB123CuXal38aXOxn3MxlVk3LHWeHVwqqWDXMDDSUZ46zRKBXYqs4ycL791o28GETywRQGk3wg/dfWLQ5DG3zZ2g1H0EzyQpE524xoC+wBzGOpdI99tqBZ4x9ABImuY8zubWSOxyJwKM2cpj0kE4Jkod9MEU4afyHQWLHTS1nFHMQ5WcOCIS2vZpy5vD+D0zbGQWDPwKpWY98RVwDwzXNRuUsatQgB7HOnXKMI16cO9zTnGlHrqRalXjHBQUbkpvEOxLKmr1bB+QzCt6hhBiRlSC/3IOYCJje2F7eEr6QRtJHec0lmnmY1nxrgK6Q+70Z9u3xL49SvJV8W9jJf47LvdyPWCbKiKDJM+kh21EhUzIHMl7uJljWsgwLh8S6dc15zfL0jDfbn4gkERwuIfgkqUqLy7gEJLlwST0wqVmDqNHD52m15xyPJwb6cXrHghx3VHHNSHUtnxK4m3GjAywbtFL5PRxTBhL5gd/cFgpwApqCShUbXyNuRStWhojiQRkS/F59jhyq2n0EJiB/+0J9PRlfNU8I9uImAu6bamyu9dtVpLay0gLGhsgX3nZS1Hnl7NsHwHco+qA/fFOFCUnqyH5YEtDhYG92RoWHp1GCGOJrn7P9LapL6NOBoy5q3aURv4W9Tb40Fb2hQzIqyRL0sLkbXZU03s=
+    properties :
+     x : 6
+     y : 6
+     width : 496
+     height : 49
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : EDT_NbTestEmail
+    identifier : 0x286e66c81de1f4d9
+    internal_properties : CAAAAAgAAAClSFTJmI1Zw1hKAP37uNG0AHBIbv5OhfOWhWFr8Vv1M5BYbnbKBA2NIMd7njAFYyA78RDZ8XmgNZahuL/lfEFghNPKMGTsb4umpjLhdOytXQAzzvwxttXI2eORcMY/7nklfsZOWq1snGnr8tHr1r+VJdOW5kqErbNo5UsuO3R2b9a6mYWFPye3uIIgJsyaFj56VYKll7f/5CzMa6SVcGerA4vpzVoWu+7skfjt/LSaDjsJrTT60BsvHH/hqWVF7eTzxIdODBq7i8BrYGncx0oo75Ntj1DlGtIFuasCHlJT9rOGg9tBm9bmL+sJ6YFigXYdwsp7xCK0zzEcV5ZMyktOpuaiWidjl4YXFnUHeWa/Jj8QHPk05Hj9z9DYqBqkbc0Q7oUpMxD5CdvXT+W/SLisokinR5WZi1iaLc7w3/8l7ZJiHb9IIqpTsWSry5SJJk53jLUac9gaQJQZ3dFusEtxvBhk8fM6tT77W/5lyKuXZRKndvq624cm417f/Uiq+rirboVwkB+SDCNNZI+GZBoxXqG0pOfecQl+S8sZZFod5cQGWkDagPPtBbDDguTAiTj+EEbvqmSoJyKsQrFYeghnKQEZzWTjp4kf8J8cWIvehpu/xrFShANNTmARY5ELoeO+/TZL8AAvbwBBiD39bGl4KHmntiX4urNMOX4/VAOATGpfdTxjNVv04D6+lkFNL7SErSBAbCkc8/s41/k8aoKzpLp1VKOvqdD3sj5udPr75Fw8uU9X/sfwoIqKPCeihgBCEHD09kMELEB0Tj87G3Om2v/IpH3ZiqbOwRWcXIzrde+sN2YT7O72CfPqA4a8IeZJhRBKehZ24OMb4bcYukCDldG4sX3e1AaL5yf936Iafiyur9QrukIQv9gEvYPg+yICjv6JJ82YOPXtQ6FLhF2N/XZawaeH9NsmNmaG8z1Lu+543zyVpEQHjJKfpct12iqYYO1OJcZR/BqxoKGM5Wa5XCEHKdXEDpir41EcOz+dNp8i9AnjX+604Ln0wQLZrhaAvDPob5bSk9I8v2BJO048YBB4Stu5n9gIqRMkiYgvD/nPoPchfGT7Se8Dj7CQSP8VHiRsYGIZ86lf/0QzGF/UCG6nBfwhE1ya8NPzTbbK0q2xgQdqLuRpu6CsK2u3dv7ieOnS9Kknf2il4TaefRP9rsxhylQqEFEW9Y/Fotkd/IXfBSq2bm7zcswGQbKIlnpGaG89Zk+rIdj58kzg0aMuboVizzU/H0YKMyK3GsA+35UA1qBF/xGd0ljmjV0w47ItlzM3PADiboV8lA==
+    properties :
+     x : 13
+     y : 141
+     width : 238
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        code : |1+
+         SPIN_1 = EDT_NbTestEmail
+        type : 17
+  -
+    name : SPIN_1
+    identifier : 0x286e66c81de2f4d9
+    internal_properties : CAAAAAgAAAAkLKwhcEocw8KE5GrR5P9+2NKuVJl0GqEvjo7dGYMF4Jmw3uEQ4XWQK2117t5oYvICwiyz90skxWSXWe7323nKrzK2nAFLnZVqQ3iHomgAVt64VVEqSEzekPIGF7x7X1u8zKFpIvS0lbLH7L+r5iJARodXAHyJJi1M2+da36FVBnv92tRnCx4Wyw7QYhjGYmCeSnMDFSjueVT7GrL4FhiQy4RpjvSZgn6wpK+ZdxnCcjPvJnhGswGRQeCxOSBaslPOOwBavsI+j5gfU70Vz1+6iYOIQl95UPP/AwDkBA0+gfqfrCl1g+vrAuS8NnCChluewdI3/WhV1f7IcZw5xuzXFuRSbrq9JvIDYff5rwgDHV4OLZz0AkhOEdiXuIFOmOjzDHmiXZsZshQmN5iMJOWIlE9YCOdF0nACHfrjaIwKagkK1133IxhojpxqK64QFIcyvDYB4Q8ka8IJpof1evjxkvX188F2O/wR7ADtnH52D43IiHl/VMQhMZf44w==
+    properties :
+     x : 256
+     y : 141
+     width : 14
+     height : 22
+    type : 11
+    code_elements :
+     type_code : 18
+     p_codes :
+      -
+        code : |1+
+         EDT_NbTestEmail = SPIN_1
+        type : 26
+      -
+        code : |1+
+         EDT_NbTestEmail = SPIN_1
+        type : 27
+  -
+    name : BTN_Generate
+    identifier : 0x286e66c81de3f4d9
+    internal_properties : CAAAAAgAAAByTKFQtjYtXFtr3HPyLAt6XlTcUStMLd+Qe2o78hU+hlaMSn25TnYURyswm4J4fU1fAqJjG5x0okQ2J0I1KvYnEmk9aTijvbEyl3PYpv9UV7bzWCISBG1hM2qhe5vH0/0x1ay9r7z7HmCqvWbTfZ3VAomC8xyod3F9py1+Ez1hH4xkq8yjm9tmYzt/MTYUGNM49UcsSii8FSjtv51t3n13poGOOTjaUIzmPYA+4J2OKH2ItoN1wuQSLeQhOo3Ylgo/t1MQQz3sPfv+bLdV1k5DQdQNGAbimFvq9TB2XkBpyV4GXgKN64zv05X8+VN4bWiAl1z8C0FF8aFXeYzymF2nuD3FBU/dsm4AwLftHLtLJ6xM/cv+STu5NjxXSJnNkEyyGYecCfrLqR6o2Rb/Z/IlLtTAknqZ7+z7W8x+CMP/vU9Rb2sVElt2kqRB0cnCvZkncwoZgsweOhYMM/eKZj97yy2KvbTmt1lXBca5vLrr5qcxa0J5Fftwnc0oxzvb5aSEdpga0OlfNkUlnAGx0Vjg+eCxqVWjsD95v8rdz7ZroougVon5k/VK35PzkJLFzqKkwcZ1yq2jIlMitu/pdOMjX+oPqdiR3cYQpOC+T15D9lKTO/Xur4V6isLk9H68VrylAJUSLhTodUHrPg5rB2xfM06aaTPiHHHWxl2fUmuoygg5wzV71gNwicg+D1K9XuFAE/CDrLoKTZ70o7tmIwIb/DM35b+0qqCVRf3Skq7P1FaIbDjGjVi8+OkYFbDzK7naWQp3t6fuYJREyALBfZW8NMJGGlgcuhVOT4Qh18r7pFUgwFPrpBPmrA524Gz+gom0a/V4v1e5Ci+A4W0LFg9GABEqhDiHx9YE5jHj95AZ6mJanxvzd0EAmBDg6xlFApY3CugpPNWCFAX88vNwxcPy/f6XH5BleXTw9nrcAscETjZEqouu71pYhhHJ9WE=
+    properties :
+     x : 276
+     y : 140
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAACPxuXnEF84ZGfyHm6VMaKWM/ix18Ms3lin2wNZevrcHmRrQLavkD9zmmHYBAEWuN3wCWgThVcRPQtmUURCC8nGV/bPT/SUiDShs952zw/9WP3jLQs/jqyVqwcTiI2/mbfXxA44LAAw+YYdGXcjxBl1V9G+5voI6VsXcdSj1MI4
+        code : |1-
+         nBound is int
+         nBound = EDT_NbTestEmail
+         
+         FOR i = 1 TO nBound
+         	GenerateEmail()
+         END
+         
+         // Message to signal the end of generation for the test emails
+         Info("The test emails have been successfully generated.")
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_Close
+    identifier : 0x286e66c81de4f4d9
+    internal_properties : CAAAAAgAAAAFzPtJCdbp6cRlIyqFe3PRyKLly2XdvhElgk+8rbqyFblvo5Ew3a75OljMRtw55sXnDWnvfxu4A72NyqMI2129h1QVvB6jCBkR0JWt5u365p+J34pbDwAh9vMk/Kx+ZHS34jijWXIM1ytFD7zFHyKtOLDd7wnZ6pAs9jrdXegKAO/ihP9HD4oIKX/Sqq506yw+ZxGcKeBxle0UfbFn5FaXBqNASh8kr9S4OkZWadZHT2muYDyAJ9DDoszydKMTatRtVGH4aH1Q1XkD5trtVK3wu7Csf8GoVI0Mhe1Z5uMtmdcMXSD4+XFOCLoMWDDrf/5l/UQifyqKOATBBBp2ihUlc0q8wclm4vmpnYq4GEzsB74kc8BtYDomi+r4jIYcTmhwwIZTYB4FV/2xrX2HMwwJLr48dn9AZkmrfZDay03ACMJGvkwcNFHlpje7KWBjhpSCbcK1AGY8Tz4y9yXfgr+7zCP0Fg+e4rxCPMz8MrjVQYXmm+vAg+umqwuQEoKEg7Otj7G9BP+249TjxCcWcmZ7j/ZLo8raxifrfZgxdGJm6jzs+FYRISrhaNTBKrdrKW9I+h9RKxx8IWaPatZr96bLU31E3/AGPzjbT1cID42+VugUW4SyEXN3kjyf8eV1Jxrtx6qQlohDHvctMEqev5laqdnQJIFLLC9W0E6r4fG1OB4TtTUuIDnT6ytq7QYY2slbOPyV2B1gh5KXycsH1Ds9GnYK1QUbhakWU/+EVzOZdWkl4zigE2itIl8bFqRYinsyp0awHC1dX3h9HHwxW3rXkMJBHNFFUdH7loeqUzT9rm+nkiNnsTwM9WkBK59jGtg5wVAo15Jvd6zV8fv7GzBjs8dvaiewJ5P/SRgphiH7LIO444d0vViRN/cze8xtD223t+cFfwdVbLVuQK7i7smo9MVQ85FEEAHQ9Oy9hNg4F1ELD/5L2PPwifRXJETr1nQsODzBi5r/0PCFcEJcsOvpdlGUKbBw+U9LYR2qQ8jkmDnNWLjyy5kT5EOEZ/GrJiUQSFEJRXPq+lY5jvru6FI=
+    properties :
+     x : 422
+     y : 177
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADQZyvpRjJZltgKBVFD+SKMukTEU1n2G2jmPSjnx1ZKdSF2vB36egNKcReVrz/xwpIZdIpZoyUu0CjPxu+MpGLAedmE/39iAmJIcu72BpKoWkpseLXy2lnJGPSMFw==
+        code : |1-
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : STC_GenerationPeriod
+    identifier : 0x286e66c81ddff4d9
+    internal_properties : CAAAAAgAAAD6o196LarGGJlygtMToJnnvQGGLaSiy/xh5EGdrMUKC5qvTn1sa6pru6IFC5iMiBz6IEu8YnPFFh5XZWBSvPRSsAtArz4hYnqbyMr1WikCwDqzoeiB0Kc8Nm2tUcaCiXML/3eMHWqxezIoQpfCn5sdzT6NgPFplaidbGXvAJcBsciz2huxyU9wjy3zSl+3UIRXPNBKpQd8POHoRM0zjaNHAl8QVJNZMoKPC3GgooEqW2jXPahlGdfpkDe1atTKjE0jWVvbfaqzuLi/pYRbIo6TXLgZGtEu0YOVjPT9DpnkJTneAMykweUbbZ9qTUVhXr+cEsjfutqVY9+b+dQkD8/sN0/Hs8KYn/1d6CQFB9HRPtheCVvQO1uQUhE0A7lWx/GfeL+I2eelgrLLF46LMxAMzl2aUf2iRMH7SkhbY5glDO7CZ7msO2xJtX9HBybRxsvCu87fYt5PXw5Peo13BIo6IDZhtUjLC+Fne0VjURa2cbqMVmOeLnueWKY8K2dYZIgwpZtePgUK2N1ZwbyjdKqNlZVZ
+    properties :
+     x : 6
+     y : 58
+     width : 496
+     height : 67
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : SC_PeriodSelection
+    identifier : 0x286e66c81de5f4d9
+    internal_properties : CAAAAAgAAACiwmeaT4RotEjlDHzmIrsU//OhCRlMIwbgfvj23ootrF6Q3I6rdh4POvquHhF2e7rGMQxPqoZkxv+YhCNATOCQBiHaCJ5aLNjnW4Hkphr/pffU3UBXyCMyoDoVAhZPl4YVa1YYqv7C01gF7amVwZEzj8hqa01pobWHT14sm1vAZzGpeXt1PJm+bfZlzaIrShhm0ok8/lzubIHxVod61nBbjptaXlpXQbFH469y4dWZQlFPiZEylJWJo+NVcKQUH5nZYKWhnrIBknQDi8EqJQ+e33HN3kFhOHzJzK4Dq1+N5C8yCJ3XBOx6wD4KpqfloYUr3ZwVjIMAlTC/yslUzfyjXHEoXRJoC2l2gf90z4blsiGqoHBzqgsZl+A5mGRpr6lDfgV2kP5G6qwV5QPEaI65UrpKtPAADceaGGVB/eUYoe8k3GBURIhvSMZarOroaiZPAIuA2IQqDrKF17a1O5BFTu8VdTL8xMrHjv6ePq8zPusj+M1hI75VKNoBtPVrFv37QrMtd//tLLjVHBe8x5auNp+vJ9znRHjaRPNKuYrLkL/RhwE3zeVox+0Js2+fSLeKJMNArpxEPUGv0EVinPgqO2QHwU6akmAauEF/yUw0QhE7/JQCjvZ2gRP7DZvjRwjHdiuk1rDAxnm8dqssXCgeY/DcGmbPwlLmW1xCl1w000jdxN0a3tKn+s0ehiT6ekxYTYUxPK1e+AOp+yMghJLR/LjO/H/+M6N3XrtCi4S8f0t+Xhy9wMMRQk79Z8LyF6pO19+G5zOLULk7QL/e+XBB69rTSzUQqMDNlcd+97wdYrcZoqD4hPozreXECBHV667J212tBVQzuP67/ctZYIYQyaTz6lyZjl76ddkii+BYfC0GZ1dlwHqbX5bFT19SGUvn1v1ZGSBbK8sX6JZnQnVz6bpVldkykuTPtmEVzLC4IQk4UKQgfr/vA6pIUEA9FsZRtjHrksdiNh4kkJDx1ujk1pN7PaNA5ViLnLeuNRoPb6u6ZaEeF0BNE8rUFbFW7Ob9fPkklDP6jLMulOhHjfW8h944McrPT+9/h556LDlyNWoOvSHq8exfwbkF7raSqoj4AS2IsJ1EoEtDuzOZWnB8EWuXJUqR4nCyTrP9jgUU2t6VEKufiMKWeUgZAYJFKFnf5o9tnt/RlUcY0b+NFlSdOdU3NvxaRlRHy9Doll2+tFZxh2bGYScnwYB3f+fsTscSxYcGmO8fq2f0LkhHVmoTOjlVSFP6XIAWyQyE8DOxy+zwgVHto9+UaZMlEi77HXSFuzeFxWnNMbNu3ce4oDShpDtnPj5IwRYpvB/VhZwCxXtOFUSGh+IBnCPNPU71OyS4J7+pQzunpBaV1+UZjg==
+    properties :
+     x : 13
+     y : 81
+     width : 476
+     height : 35
+    controls :
+     -
+       name : BTN_Period
+       identifier : 0x286e66c81decf4d9
+       internal_properties : CAAAAAgAAAB7IRbjw8vVBz3K/LA1fI1BOs25TPFZ0hpp3mIuzDGanHNc4FQxlx2Ec6XGSz36elZiW0R/3AZcOOlA8GCnlDdplZBodO+8aGYUiWP4Sdn1fUZ0WG30Y/EWK76KdsKor27ZPu/vgohz5e+XVxjzv5bQQpHVEXFbmkVnvSISli6Y1KDQEE+CCNreNEyAOVnyg5eWeanD53bRTfhWtl1JlUZvvp1R+TJN5yhGD4dv7T2EqzjWVlb3oHZ5J1BeF/TND9ASx3LT7JK+oww+Tp37VQgVQrCGJRHHnwHK2Rp6z0YTQSHdqbdKrWLOki4uP0L51E1vkNipKdB5GNiAKbV++2m23C5Mxu0cJy85Srr9VrN7jYleyoRcRlUBKefsnZwtpQAQHa9psVisQjAQOInz83kr2exPfuFgjseUOGkwc0KTd3CVdlyUkcFW8ffAJKpX6K3XLin5lLOhQDVA7SMvvx4RtKlldZXw/+GofPghC71Zi81Q9xrkPP7amC9YRC7WT2/9xz0iSaMGvIc0/aUIApXzg24KP4xeUVBA3a1VlCgqTXyWEtgY84G3/SQzCSsVI5PGlZFHssolMCCt0Va5qXK1iGnu1XcOjCsyAUCkFmRG9yxRCsNHS2fcF9nQm3rSb+MA7mssSKIbkbeE0rhUogYDeIrhY4gI/8l3UaQE8qbnWYxgshkS0qq5rbSvQgF1gIEHlmxzmDGgcJx+s3rjOJQhSKOXO4Et9XqIFQ5eG387ALSG/Lg0TlxNH9cFJE8CMGlj/DCO0BPzJzUcq+ESMsYp4sE6uwyJbB+o1kF5bOKUSkfcVUFqgCoiZNRK6QpnA+tKvB6iqnqu45MDVwQQvkyVQMkEZch5Frm/rGrVBPUHxFoj9FcbwDs/cnyHxb1X0zpVVEaajiJhHtANs6ydYTF8h/CEnvmlQJ90t0NMU2ZR0s6ZZsUfVBSKBWJXLZUWti5FCf9izmL74sBl+yieTAJvZWBl3THP0RfbrDH8uO2jG7B8A4OZirmFn1uv+NIm7M/OQMJIVyIrHhq9Q4nUbaudXyDtwLqOVFxODW1rbEHZVbp4JizN5xLT
+       properties :
+        x : 328
+        y : 4
+        width : 148
+        height : 20
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1-
+            
+           type : 14
+         -
+           code : |1-
+            // Open the popup menu associated with the button
+            OpenPopupMenu(MenuPredefinedDate, MySelf..X, MySelf..Y+MySelf..Height)
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : EDT_EndDate
+       identifier : 0x286e66c81de8f4d9
+       internal_properties : CAAAAAgAAADhMi+ZnFsbocOc0Om6pdkugEmXGxw93XFJnIkAQfSk/3zqM8KyuZwXGFz5dmoJzhovCYOtq3JaawVLAPqLb8WgrrlOZ/f+AQEy68I1o/wYjTGLjQNRto3edNAc5mFH1BwlZgPikCFXzCrZG6/FRgNwwsvkGrpldg57y/9L6xuJZusBOom6zUXluz9M3DKnhT2O9j9xqaQ4pewPVDc4yoSKsRDQVWW0AivOKR+0VlZ4qodpvSfs2tnaQSvswblgCxfxRJmZMW8ZOn1MW9ocVpTqaLE9OqfIMt8uiT8MdUhvuOKdU8pAOUiAVtNBL4i3Gj7Jywu1n39dqZPvF3S2wgskr2zh31sWF2J98+avEG+KJkutsFYGpfI+Y+toXgDuzxZRC7/E3nwXgo+1mbNkQisXjjSX/t2+fcOcEVC7x8862YIxEomTDDAhLJpwcr+SBTRPvr4gWhquMPZiP94F2OmnwqxKFXVFE8GITAhRo6XztTou9U3dO/JiSDWwnyYVy0DJCappNus7YXBy4j2fjp6cw3NKZDL/LJbWVrQmiku6EBJHDLTZpMDIbTO/4MFXKdEeh7SrP15kUNJYanSLq3sIF01UT3lEC28RUhQWW9RF63fkfSrFSWn8l2O61tQPF4gl9krlOjcROZYK+eXUbcWmIxn8UXAgykQbF3cqrnQmfMkrV76VVOK6h6iCgq+REA1PXEKp5lasrRM73IbnYvWb9cyXNVjSnyY1GALs6HNCqsjbbgj2fUqN4yftsDlqQFq1dUTLdRFpMn/GUYQQ78rppstrDwcIF2mxEs9/I0/BVOSY9jL0100flSvQ44iDpjLE57TkuVDc8GTbVWS3QGlbKSOE7ECgh2m9JYfDPX0XhCf3oe8iVgQMguZHErd80RMufoBJ3miEPLq2PALs5bm4/zAPWbc1Am/ZYx5MYYUX0RAHOgB4046LIOoI4P8FdyWVXTPzpzuxej+akS34/wrhEkTTgyzrsucFZc0jbHdxk61fIu72KDMUjEbfpg0o/W9AD5b9u7WOhQHau0ilIzINlCZ7+u28e91N6hBZxvPfQsFR1e/UNHk9jjBC3g93ptuULKfH3P2/2FN83z54yfmP/Q3RJ0b/nPCAPGDXZO7xWiXuhTrx4HIyPn6T+rhoXiUEFoLAXx0hh2c0t/XwvYbkc/xdpO/7BYQR1eDF43IFi1KsDyvAQ4y5Jgp2Wu+U5W7dVTeThd25DOaGY3Wekfsz5JJCzpabgXelkN5qC4vplD8S0yC0B3Dz+2t7UABnXvMFl3EGM/MAfIc1xNZWms31hMmIbV2mOWoIKzuhIJM3buE9TAADvPk=
+       properties :
+        x : 170
+        y : 2
+        width : 138
+        height : 22
+       type : 2
+       code_elements :
+        type_code : 3
+        p_codes :
+         -
+           code : |1-
+            
+           type : 14
+         -
+           code : |1-
+            
+           type : 15
+         -
+           code : |1-
+            IF DateValid(MySelf)=False THEN
+            	MySelf=DateSys()
+            	STC_DAY_END = IntegerToDayInAlpha(DateToInteger(MySelf))
+            	MyParent = EDT_StartDate +TAB+ EDT_EndDate
+            END
+           type : 16
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           code : |1+
+            IF DateValid(MySelf) THEN
+            	STC_DAY_END = IntegerToDayInAlpha(DateToInteger(MySelf))
+            	MyParent = EDT_StartDate +TAB+ EDT_EndDate
+            END
+           type : 17
+     -
+       name : EDT_StartDate
+       identifier : 0x286e66c81de9f4d9
+       internal_properties : CAAAAAgAAACo7YjKVvQFJc2sgkaqdRpZ0rIhFsVHj/5/sQC4A7pVfzgUdEtYlSe79ENcxFxh9CU9V9VugDxiWx2AFxpgZmtnr/Cb+mHmCEWyJmLyjjxpRMa+Skpn5ECmQcuKLGeH3qadeuexI+07W++4pcUxx+r1Y6NgcmdLmuYF7NcX2oQwWDFq+fg6OB7EmbfKLljev8kL3uQ5C1TAxZ6JKU4jWMAd4/gnOS6FAh1UDz7o+2xxccnmpwwGwz74eiUNbzROk8y7Og69xw4Oo7Nnkmq6n34Lcx0+ZUtXLmlPm6Z5oQW/j5VsPp21GDrVLE41XIXn8GfFBprpmstRUoUnYSWAFswKvaZTTUmBbGp4VpnD8+6UHSEboafEN3q0GYjsBR/WZ9Yv1KQEQoN0UfhpAURWbi4q0u8QBM67BLF7qpqisXxJYt1uJZMR9T7FAy2QudiYGYgC8QExSMWNbfYqJ134kXr+uv0yYzwBCwQbany251IFAM5avHh9pXgXgsli0Bej2Qi2S9wuCR+5jEbr8FIrJHXkpuWqeM0O2avq+d4PE/ntP85Rry4mRAQ/K5DZCjdN1Zd4mYVniYfQv2ruf/Lzjcke5sc2K6DGaz6zEnKi3BBevtTJsfjH4d5TAywRymnolRkJiTGLvcxJN9gIhEcXHqAPjsFZNyrHe5rLbUAxpP/mo0fbEhTujbVWcbI159O2xmT3vIc1WeUfi1vTlT29CxWIk6AqCyulqHorzH3J5oY8OT45V6a9xPVr2z2mv3mz7Me5s+nPfr6g0Dv0VJlKFrgwfO+iv0i5tKnb2JQyvwrjkzSy2zTbbozlHYHfTNjiQA3YNb2C2JudKAo7jpPBpWfuTScBzh8nbhFPpzZcrVy1AVNXwKfVYV2y3oJWA7uXgZjiBM+ZFYsnBioaa6NAuPd7ycQol/BuxdEdJ+tfe8Q32B71t/zBFFPVdNSx/xEEzzhZ/cwJ1ITI1OuqHiiYLiaCTKrkEw+Gv91VF+x8xoR/mltB9bpjAT4uvDJEOaH9/2QGGw2XyhwZ4VeChLeVRMZQhk5U8MRvkkMFMKfSUvB547uT2gPV8fixJJypN6eQ8JJ6sqwrt5gSqlci2luoaPeSp4fCVzG+wZ5QMsfI3nNT9VnKqr68ZxFcwgLEmVpdRggWYDO+TIYeLzlGrHhsaG7F+9ij679Nof/MbNiHPKVYlMjC6Lzf9V8TISdY1PIY6jNThQ3mo1dflRWX4RevZwDz/flcw0yGSHgpkyrjkaDirlHzszGRu5CD/cP7TLg+B5I41a91zBRJ8F9dw76Yo7H28Zpc5HKQybIZY795FDSLvqNv5e9vXoKbasI=
+       properties :
+        width : 147
+        height : 22
+       type : 2
+       code_elements :
+        type_code : 3
+        p_codes :
+         -
+           code : |1-
+            
+           type : 14
+         -
+           code : |1-
+            
+           type : 15
+         -
+           code : |1-
+            IF DateValid(MySelf)=False THEN
+            	MySelf=DateSys()
+            	STC_DAY_BEG = IntegerToDayInAlpha(DateToInteger(MySelf))
+            	MyParent = EDT_StartDate +TAB+ EDT_EndDate
+            END
+           type : 16
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           code : |1+
+            IF DateValid(MySelf) THEN
+            	STC_DAY_BEG = IntegerToDayInAlpha(DateToInteger(MySelf))
+            	MyParent = EDT_StartDate +TAB+ EDT_EndDate
+            END
+            
+           type : 17
+     -
+       name : SPIN_Start
+       identifier : 0x286e66c81deaf4d9
+       internal_properties : CAAAAAgAAABLnXBhmd8JCUR0RmlnBSBBZdrJZU9F0DfEIxfDB3pB2Rvyffp9JuLOgl0yKxg+Y6WIhiCsSNxMIYY5ZPm4zqwRbjfTjW9pHseLI5WzzO/8k/Lw9i9pD3JemvnqKfPxscQCJcqrHVgdnp5PfizBCWQ70AcLjplGuBhPfs6JIw3HWFbVMpKZ8TcMd3lzgCxxYD6JSaWZ1uRwZnGWa7O1g3jX14vEtMD3IxR6MoL0Z8VFi+jop3NmaJlU+U6BnO2+Pg5ADfrhjfidKKJZdD/sZRuNtzZzMcIWTyXWA1g5QWsA65SC/+jqZya6sMIaSLYSfz0d7pFTcIxZCqRUmmpoc+uFqLQAjlSHc7fR5ytZ1fdVDVeerFmDYsK/ZM/SODMTc/ue5fRMJQU9EMMRkaWVB3uPaVH6P13QH1Hrzf68BvlZYuJvH9baZRWRLDb3n1Zxj2xOohkk4AyCRcKziTj8BWa+qH2+Z67vFeDx89I0UA==
+       properties :
+        x : 148
+        y : 2
+        width : 14
+        height : 18
+       type : 11
+       code_elements :
+        type_code : 18
+        p_codes :
+         -
+           code : |1-
+            
+           type : 14
+         -
+           code : |1-
+            dDate is date
+            
+            dDate = EDT_StartDate
+            
+            // Next day
+            dDate..Day++
+            
+            // if the date is invalid -> today's date
+            IF DateValid(dDate) THEN
+            	EDT_StartDate = dDate
+            ELSE
+            	EDT_StartDate = DateSys()
+            END
+            
+            ExecuteProcess(EDT_StartDate, trtChange)
+           type : 26
+         -
+           code : |1-
+            dDate is date
+            
+            dDate = EDT_StartDate
+            
+            // Previous day
+            dDate..Day--
+            
+            IF DateValid(dDate) THEN
+            	EDT_StartDate = dDate
+            ELSE
+            	EDT_StartDate = DateSys()
+            END
+            
+            ExecuteProcess(EDT_StartDate, trtChange)
+           type : 27
+     -
+       name : SPIN_End
+       identifier : 0x286e66c81debf4d9
+       internal_properties : CAAAAAgAAADpgJqo8tzgZh6vxwBvtjrJuPLX2SncFxMUwzpXGiyzLhlyz2xwgux/TePmDVaC1+DxOaoGDmfp+Z9NteGpqRWRLrqkpGpm95FihQGgWSvfpYPgVCyLqqfDsTWIC80w7lgawH9cGWHB2/my0xX1HRu4yw7o2b/48J8wlArEieixR7xAnYdzOqyk+le+gMA++3srhfCsrKRDtzAWDfDpjusSYd4RiZHNPRAtPPXHl04QqJIJ7Ogc9wIPlRep7taNtstm74Yk/GnRO2Za1In5nns8fUCbOhXtl87YyJ4BKGx+pkLMD/M5ytKDOL+oLB2xBXJJNmuaeeWX7YoHphz59PNIDARCHZNsC3i1cP2pEmB1XKG02D7iz1Bq4I7CEpyUyYycP4TF9mwPlYeCi1VGinMwK1c+gFQTC9472PLWf3J9y+wdr2lbmvHubjXl61l0Oeui+s+Rt00QFGLGe3QZMAYTpjc6VvMeyfM/cHvFeFs=
+       properties :
+        x : 308
+        y : 4
+        width : 14
+        height : 18
+       type : 11
+       code_elements :
+        type_code : 18
+        p_codes :
+         -
+           code : |1-
+            
+           type : 14
+         -
+           code : |1-
+            dDate is date
+            
+            dDate = EDT_EndDate
+            
+            // Next day
+            dDate..Day++
+            
+            // if the date is invalid -> today's date
+            IF DateValid(dDate) THEN
+            	EDT_EndDate = dDate
+            ELSE
+            	EDT_EndDate = DateSys()
+            END
+            
+            ExecuteProcess(EDT_EndDate, trtChange)
+           type : 26
+         -
+           code : |1-
+            dDate is date
+            
+            dDate = EDT_EndDate
+            
+            // Previous day
+            dDate..Day--
+            
+            // if the date is invalid -> today's date
+            IF DateValid(dDate) THEN
+            	EDT_EndDate = dDate
+            ELSE
+            	EDT_EndDate = DateSys()
+            END
+            
+            ExecuteProcess(EDT_EndDate, trtChange)
+           type : 27
+     -
+       name : STC_DAY_END
+       identifier : 0x286e66c81de6f4d9
+       internal_properties : CAAAAAgAAACCwUhhbliaYEawgfft9G62+GXu6WHubx3koSszjbU8OQpUPZ7TAlcs7QxzT0UMoXBg3pXsoRuPbqTUT87BWTUEYHua3cKN/KDs/fEamE3aOTYEamXaa9tzx2U7uoXmR8Myi2jJBm2h3gKP46//IUTVFRq8QwbEgFz9GeNTgcUFTRAGTQL2ldRegNRtry2K6EoeGRugawrt2npFMOsGcqUmsjBEnIl14EWpo6IQl0u2janz9aVpwJ3+XuCuGpkwZW8IbOVOvoDrwQj4iHy5ZMgfElG4lQMMPx2+dGI1bNdpo+mHUHKYMnouzJwvqgGbjlzz109uspayB1uxDODz7jGIk0bIRVQv3jLhBx9OLRNsjXK6+WWGpvrf8TOHOGwC33UQloWqopkaHSZQg9DBW5mCL5PmYeLqplSKlnc8P9uWnAzQpJfWmGKtsJkSDCeFxXP9rz9CcWKzoK6e+EkEXJ5vx+tGISjoiMvnhho54PZodxTYFxngSMYmVtN8/y7GKCIA7DbRWvClQV0qCehb+cjmnYGI04yT/tOB2bE4gX8D334=
+       properties :
+        x : 240
+        y : 21
+        width : 78
+        height : 14
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes : []
+     -
+       name : STC_DAY_BEG
+       identifier : 0x286e66c81de7f4d9
+       internal_properties : CAAAAAgAAABUWLSZnE0Ir5OSh9RPkFsR/FSPJk3Sp7u7zpb6RWErHy9ScilYOnBCZSWKpqEEeBtpcCLxlOWCeag2+qnet3WN+OA2ZBIHcKTCQO2LrwTt55gfeXbj+8t9+E1nYHqR3NWs/Rz2FsROFDkoRYEy58Ye0QIdKrBRTT12lnvVBV1RlKNaK+iTRcIsbOoH7dfLMGWCzG+/oz4VX5p9NpATKf+42n1t3OxB/2tRw7CLKypXKq4vex4jxw7S5632mfxn8WW2rfuGxkANhnBCKm57aGNEQ+mRH8E8xo7xvN3zlQePuibheTQmXpOLT4JWguan4Gn6q+hsVHZ3khRNKzBweE39CDoFJ6IT8RHkk5gAQp0IOLOghA/s/g1EMFuCdu8wZ+yDlFQi7q9VOD+0+OqAVe1xFJW3vQJw1ydHSvYO7rXiF+2oIbFkaIOOu731IODNGz4ucT4u396OVTGI1cNhgaCdQKld8aGsy9Iy4qdkfkd5VomzZOHv5BHmT+IxcGIrMIAG75+uUKiho1ocu7l/0yU3yqQ4o1h1HkAblgQKp91R1g==
+       properties :
+        x : 79
+        y : 19
+        width : 76
+        height : 14
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes : []
+    type : 40
+    code_elements :
+     type_code : 34
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADftJKTD3XGzdiQndt0EFwNUBJwvscgp0Gb0GpkMCfL/7itgQGWneuvDPfkzf9iIbaXa4F/IkOY47qjQyz10X/eWraQavE2yNKyaxVEPNxf1hC95Cj6lpifKusWwuaAW71inokxM0ZmbZciw9x5bPLqBTS8nG6PvFFOc02AJZNQ0w==
+        code : |1-
+         //Entering a period
+         //
+         //This supercontrol is used to easily define a range of dates (useful for statistics,...).
+         //The user can either choose a period of time via a button (today, yesterday, current month, and so on), or enter the start date and the end date. The days of the week will also be displayed for better readability.
+         //The value returned by the supercontrol has the following format: <Start Date>+TAB+<End Date>
+         //The dates are in YYYYMMDD format.
+      -
+        code : |1+
+         
+         // Initialize both controls with today's date
+         EDT_StartDate = DateSys()
+         EDT_EndDate = DateSys()
+         
+         ExecuteProcess(EDT_StartDate, trtChange)
+         ExecuteProcess(EDT_EndDate, trtChange)
+        type : 14
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        code : |1-
+         
+        type : 17
+ menu :
+  name : _Menu
+  identifier : 0x24a153111935c701
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ popup_menus :
+  -
+    name : MenuPredefinedDate
+    identifier : 0x286e66c81dedf4d9
+    internal_properties : CAAAAAgAAAC0YS/M8ObwTqg7c6Cc6pju3uexC4JxiZLCYnRhvBcWGP8SQAzgMHp3o3iyra7JNFVm6NRCQR6DUI/sf5yHY2XKeDoWf7aSNbR9AIP/SsG0SVOWnuAIRLmk3/dN0dpdW/0kdJ8znuLnGxRzbaTyBW47bGyqj3qomv4VXYhxOfD4MHuXcSXvDbNjpHSYZITH2QIrVKeHrSOXq/6Sgnr22Xqf4lT+scIjvU1g2g/SPuuZe1rLRWrTgWLQ1bnrl6/s3/WLH41bSlribeEQNSkxHl5UchQU9VY6lFTcF/v3RB2aZBsOTq0P2Bj20U6NzjiqSEQwAZkC53WquoxOJAO+tIuU+xIaP7i9JbgGnn2bLpkgtIEwQKpbIsuN/SfVbhOK52Hw
+    options :
+     -
+       name : MenuToday
+       identifier : 0x286e66c81deef4d9
+       internal_properties : CAAAAAgAAAArCLgOJJAMf7epaoC7XXGR4B2byrIrmuNjrgCpCOC4ZVpI0NUPnJQaYifMzo4SBlDQAtBibCaXKsK43knUQOF824NCNr3FWgceD1pcS3dCEv1fmxc0uoAmoyH/H29mvxaaLRzi/PRWxsSN9Y/qo5xLOZK5I0kors4JohUEPhcohcm5mkmhnSnvL888bg5/Wdm/MbUelj0d7MWxv+YEuIWYAcdNUseWJXTRvwGpmzwZWtxhqYf/FI6wR3zAVg4k4KoxyCnzn2GoMTnBWttmMT7lS4upde11r1b5GvPnvM9gfscpNlycAFnPEDoyw4zrPbpFbpeeKFy4oXwvVYJf9BCaG8A/nQs2CkxkMcqJK2XMMDdDyvcRL2zxC/HQt0ZsmvKaeVmKKCe8+Z1i8pH2hjw=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            sSuperControl is string
+            dDate is date
+            
+            // Retrieve the name of the super control
+            sSuperControl = ExtractString(ControlPopupOwner(), 1, ".")
+            
+            {sSuperControl+<§$003b§>,indControl} = dDate
+            {sSuperControl+<§$003c§>,indControl} = IntegerToDayInAlpha(dDate)
+            
+            {sSuperControl+<§$003d§>,indControl} = dDate
+            {sSuperControl+<§$003e§>,indControl} = IntegerToDayInAlpha(dDate)
+            
+            {sSuperControl,indControl}..Value = dDate +TAB+ dDate
+           type : 32
+     -
+       name : MenuYesterday
+       identifier : 0x286e66c81deff4d9
+       internal_properties : CAAAAAgAAABLW2JtF8TnF0ZVPQJ0kHjJFjSPS/PF0NwuE66SJ+Z2TOs/LYX8vWpNacb02drcApVV/Wlo326gdh/AqMoe6K6jy/5+BY31iEkFshaq5wMCiiBn8j7pC82UjFaD7NaAu/gi1j0FHL7RQNf6plul0qTGsQRbvju+yazIQWp0yn553rny1mQ8PhjaVfoAH39NFkghIPPIMzfDQpcOkAUm2j2Dvg66GdF+8Is82IX2THlI1rT5DT5UJTFkA6hH0gKZxBieapH4BwavTIyo/rEk6WvkW2+YJ2k8pyOz8pgOtU9DGbnJ77GWZMdPdC3VqoyBz/see+aQ5T4+cmFenztmnrkaFh6zKjokxJqEyx6Q2V1/2evYDl6mNidoYSZsh2N7C+3O82MhwMI5V+vjEayxpBc8TSomEQ==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dDate is date
+            sSuperControl is string
+            
+            // Retrieve the name of the super control
+            sSuperControl = ExtractString(ControlPopupOwner(), 1, ".")
+            
+            // Retrieve the previous day
+            dDate..Day--
+            
+            {sSuperControl+<§$003b§>,indControl} = dDate
+            {sSuperControl+<§$003c§>,indControl} = IntegerToDayInAlpha(dDate)
+            
+            {sSuperControl+<§$003d§>,indControl} = dDate
+            {sSuperControl+<§$003e§>,indControl} = IntegerToDayInAlpha(dDate)
+            
+            {sSuperControl,indControl}..Value = dDate +TAB+ dDate
+           type : 32
+     -
+       name : MenuCurrentWeek
+       identifier : 0x286e66c81df0f4d9
+       internal_properties : CAAAAAgAAACuiBPHu88+35yhYj+thyafZPoRcFNaywSGHETUxfiXlwx/8NMRh+echbyZsgMLFqMuw7LlufXdh8uSt9KyMGmvBMP8VuYDMwonxoT0Tm7X/jn86jsrnBdHS5O7jGKCs2ABVwIAEGhLEl3txcQlUuHLDinndO6f+v8H55JV6JiZ/L2S6z+PlWSfXTPfF4MhCIWrF1S+cOlkHgKVWn6yOBw2BZKwvxkoWGVgK4j/vt8KBhGvfmoS0Er6InTngf1iuOF7F4eFU+ZDs3pOzfl8H12or+H+EC7KBWs2BXG8JUpapS2MrvFeMee04hHi8qorcPnMqXwQfhY96gj+9YZK5ozs2IAbgTj6tnAvh8XZ29nh08U3wkxoLYarkRyCHqAtA1DUjlhbcT10Tg6yce1lyP+GhXIHzAImj54=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dStartDate is date
+            dEndDate is date
+            nDayNum is int
+            sSuperControl is string
+            
+            // Retrieve the name of the super control
+            sSuperControl = ExtractString(ControlPopupOwner(), 1, ".")
+            
+            // Retrieve the number of the day of the week
+            nDayNum = IntegerToDay(dStartDate)
+            
+            // Current week
+            dStartDate..Day -= (nDayNum-1)
+            
+            {sSuperControl+<§$003b§>,indControl} = dStartDate
+            {sSuperControl+<§$003c§>,indControl} = IntegerToDayInAlpha(dStartDate)
+            
+            {sSuperControl+<§$003d§>,indControl} = dEndDate
+            {sSuperControl+<§$003e§>,indControl} = IntegerToDayInAlpha(dEndDate)
+            
+            {sSuperControl,indControl}..Value = dStartDate +TAB+ dEndDate
+           type : 32
+     -
+       name : MenuPreviousWeek
+       identifier : 0x286e66c81df1f4d9
+       internal_properties : CAAAAAgAAACjcRuX2LLOqr6ZLps3PHt2rJhlTRw5FVBmryZxr575G3gq86NNM7AMBXqFWUR/ksAPtFjVfhmhtORatmlnGtu3q134D7rqr4pKRCRNafO/TXdvctA5+0zYiWHL7Da9B55F25ZXvqTjRUPMxBcXOPEaCfX9UeDWoBw0X0zze4t8UCS8BTX5hWFCX7u8QZrvDR5qU1PhZFdjvVrOXLjb3a9D2KwnC8CCzGV5lBt3J6GChRyOe1R+6PG4OEygSCd4bcdlg8QlUHlNHVyjV4wvYvcikTr3Lt1uP2P3rz7kDSAo4gcvRv9hQ9cxslz5cI381PlZUTMHQjVw1sIvGzUVGiAodfPk2eMY6QeItSV2cUKVjRX8fInApjmK/8IZLOIB5QbZBtPuWzxdAY95oo9rsSPUaeqokn6NkUFr
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dStartDate is date
+            dEndDate is date
+            sSuperControl is string
+            
+            // Retrieve the name of the super control
+            sSuperControl = ExtractString(ControlPopupOwner(), 1, ".")
+            
+            // Position the day on the previous week
+            dStartDate..Day -= 6
+            
+            {sSuperControl+<§$003b§>,indControl} = dStartDate
+            {sSuperControl+<§$003c§>,indControl} = IntegerToDayInAlpha(dStartDate)
+            
+            {sSuperControl+<§$003d§>,indControl} = dEndDate
+            {sSuperControl+<§$003e§>,indControl} = IntegerToDayInAlpha(dEndDate)
+            
+            {sSuperControl,indControl}..Value = dStartDate +TAB+ dEndDate
+           type : 32
+     -
+       name : Previous_week
+       identifier : 0x286e66c81df2f4d9
+       internal_properties : CAAAAAgAAADGoLtfQ0cO19S5Crajz33H3IbltJ8WH7hCGFz4cZzTL3SbnJdR3v1NK5MF3CdYOkvGc/rNmd1Vrztq9zqmKkVHdMfIi7J3AzwVFCg99g+86KemWDeKYrWv0+x7xOBMxySl2zbUBDS/Jj5nGsXpEFMKUNffZN73xnFwweY1OLljQke2ZNmpAVGjtqE/IxyHjVddplDY+bwnBuZu5uTvUx5wtXzSssT1m01rywGaUSmtVA9KcF67anCo5D7S9krZue3R4UV3dXxdndWXgDbRjqZs081iTGJeobeiAZOspdIB3ISbX2Fs1ykmMK4Gjo1U73RnDO0/RBA/4JZMVRqO+hggNKyvrfQ+KoTTJ4RE+kifawqonB4So7Q1S8Y4YALfUR4GuA4VwzOioLDrPORl+C+WtRo/BFpOt0Y=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dStartDate is date
+            dEndDate is date
+            nDayNum is int
+            sSuperControl is string
+            
+            // Retrieve the name of the super control
+            sSuperControl = ExtractString(ControlPopupOwner(), 1, ".")
+            
+            // Previous week
+            dStartDate..Day -= 7
+            nDayNum = IntegerToDay(dStartDate)
+            dStartDate..Day -= (nDayNum-1)
+            dEndDate = dStartDate
+            dEndDate += 6
+            
+            {sSuperControl+<§$003b§>,indControl} = dStartDate
+            {sSuperControl+<§$003c§>,indControl} = IntegerToDayInAlpha(dStartDate)
+            
+            {sSuperControl+<§$003d§>,indControl} = dEndDate
+            {sSuperControl+<§$003e§>,indControl} = IntegerToDayInAlpha(dEndDate)
+            
+            {sSuperControl,indControl}..Value = dStartDate +TAB+ dEndDate
+           type : 32
+     -
+       name : MenuCurrentMonth
+       identifier : 0x286e66c81df3f4d9
+       internal_properties : CAAAAAgAAADbpYp8lnPeAfaaZOyhHZc5UlTT1u1aK+RmdJCMBej/ayDPeBNBMzVDGdCfVEVEwk9FiB8h1QxE9g3H4CI2aKUdbHMyuPEhuduZwe4PFp0b3yW4ksWq+P+kPshPDEKKOac2uUgUYo3X5gdlxQxhMukf6WbQhkrWElcgJ6immQDoVE+R5FkpQRGjtuG/I1xHjZcdppAYObynxiZuJqSPc/5Q1dyyUiSVe+2LK+E68UmNtC8q0P4bCu1z2SSnKAvqqGqC29nD8eddaIH3fMpBnoyXBOKQVorqmW7YZZU8oa7NR6qhpb10x02K4YDa9nfM/rt17Fcg+BaZ8hoMpxBEJWaug8Rg6h/Uh/hnj9y6ZFzSJLUlsF5qA8xdAx6AYOLnsfZmIAYdt8caBNBLmHgJcFS/viNCIT9buks=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dStartDate is date
+            dEndDate is date
+            sSuperControl is string
+            
+            // Retrieve the name of the super control
+            sSuperControl = ExtractString(ControlPopupOwner(), 1, ".")
+            
+            // Current month
+            dStartDate..Day = 1
+            
+            {sSuperControl+<§$003b§>,indControl} = dStartDate
+            {sSuperControl+<§$003c§>,indControl} = IntegerToDayInAlpha(dStartDate)
+            
+            {sSuperControl+<§$003d§>,indControl} = dEndDate
+            {sSuperControl+<§$003e§>,indControl} = IntegerToDayInAlpha(dEndDate)
+            
+            {sSuperControl,indControl}..Value = dStartDate +TAB+ dEndDate
+           type : 32
+     -
+       name : MenuFloatingMonth
+       identifier : 0x286e66c81df4f4d9
+       internal_properties : CAAAAAgAAACBzWxIGEnx/WPLCQ6f/A2AwQETHw1IIs9iB6m/1Tp7KZt7kCi0SnQZkrxp8SqNhx4nt71/4zcq6kIuf/jtZuVSzfdaPj2M2uo39LBafarC0zoAfVg6NXWQykSaf9yM3fsFc33SRBTXGNtyNLQ48mNdQKFk6QPxAXqbHT49pOE9Kqn2xQmYn9Kv5SRJt5lUfZeP2s5xGoFWB+2krykycNibTZ5OcC/zfT4T/X3vDeN3sAIk6hm+kOEMzMNBuaJsCJz1IHJtEV9RxddhW/aiVuQY5e06+0mDEGMpldQOaPwE0BmDLC4i7Z4Jp3qijJeg4Q2mSRK5k2d53//W0/P0ax692BJer3u+x0J1kV8CsMpk8NIEAgEdntgYRzum/o6UPlcTEQhF+856Dnf4zktEWBzL2Yue5O7+qdlFgFtE
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dStartDate is date
+            dEndDate is date
+            sSuperControl is string
+            
+            // Retrieve the name of the super control
+            sSuperControl = ExtractString(ControlPopupOwner(), 1, ".")
+            
+            // Floating month
+            dStartDate..Month--
+            dStartDate..Day++
+            
+            {sSuperControl+<§$003b§>,indControl} = dStartDate
+            {sSuperControl+<§$003c§>,indControl} = IntegerToDayInAlpha(dStartDate)
+            
+            {sSuperControl+<§$003d§>,indControl} = dEndDate
+            {sSuperControl+<§$003e§>,indControl} = IntegerToDayInAlpha(dEndDate)
+            
+            {sSuperControl,indControl}..Value = dStartDate +TAB+ dEndDate
+           type : 32
+     -
+       name : MenuPreviousMonth
+       identifier : 0x286e66c81df5f4d9
+       internal_properties : CAAAAAgAAACU+2o4BxOzsZIbzZmRuF4P33A8Jup72cpIOnC2Ovo2Y2i0cKd5/Lqr7c0GhzqEwT633vv+T8UTFabZ8EtKNXnAlvyuXeg0SsrmtfqIfN0tvtG8vyop8QP5AbkpeKYX65KVwj888TUxFghNfwuCE4PDrSq0hHdBMjD2hDnZbVBA6fpGiFltof7N3fWkKGKSK109KIvFnzOJ6Z/9rMC74GhPh7Pw9zVCSJ/gm/3WyVgyNCt6dudDv4ZSXQHkOmZqOWH8HtCxaOsWT/27l7ZVYegpSZGgkHX5iXhem6P3mB9aqRa+CkMvMgQ1sgd+ne7aMNIZFz5wzw+oPsEaRyW5hzBX5C0pcmHG/2qWWD8It1ZRXKckFSchixCVgzzXyGqWUVl4UMg97K8CpTGZZguD3+/zSabAfKtEprjcnZU=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dStartDate is date
+            dEndDate is date
+            sSuperControl is string
+            
+            // Retrieve the name of the super control
+            sSuperControl = ExtractString(ControlPopupOwner(), 1, ".")
+            
+            // Previous month
+            dStartDate..Month--
+            dStartDate..Day = 1
+            dEndDate..Month--
+            dEndDate..Day = 31
+            
+            {sSuperControl+<§$003b§>,indControl} = dStartDate
+            {sSuperControl+<§$003c§>,indControl} = IntegerToDayInAlpha(dStartDate)
+            
+            {sSuperControl+<§$003d§>,indControl} = dEndDate
+            {sSuperControl+<§$003e§>,indControl} = IntegerToDayInAlpha(dEndDate)
+            
+            {sSuperControl,indControl}..Value = dStartDate +TAB+ dEndDate
+           type : 32
+     -
+       name : MenuCurrentYear
+       identifier : 0x286e66c81df6f4d9
+       internal_properties : CAAAAAgAAABPqb5Qqg7BeP9jWT2yPAZWb5FK3Xw3oB2lC1MT5Cms3hPSmbyikJI0DOOKr9gBN7bsb8ymSr0ZrxC6A/EleYoYQ4oLed7SQtgMHL1OXQoAGqATr1rPPYyd8atCG/lDYlYhVPUp10rkS0LoXJ8MdzYa/NEtSwlWPtUGHYqsx/4ihn2BtInZkQHzlvHvs9z3DbdNRpAYGbwHZraOZgTnO1YIzRSKWiydk5WDw3miSTEl7KfiSGYj8iVPmXQbhD/SGM7S48Hba037VLMJDLLp4mb30nAsyoQwpzoK1xW8UeITCwy7TQUyeffC1zYGgnvAeNtTeuOUCtxvfpyeN4D0iYRKPXaQ6hnyWfhlDVAOALCAUF9H0L6MKf4N8YwMVC6Xh9IA+s7ViQUs6JaRYLCh5OLPuCVeBVtHrr8=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dStartDate is date
+            dEndDate is date
+            sSuperControl is string
+            
+            // Retrieve the name of the super control
+            sSuperControl = ExtractString(ControlPopupOwner(), 1, ".")
+            
+            // Current year
+            dStartDate..Day = 1
+            dStartDate..Month = 1
+            
+            {sSuperControl+<§$003b§>,indControl} = dStartDate
+            {sSuperControl+<§$003c§>,indControl} = IntegerToDayInAlpha(dStartDate)
+            
+            {sSuperControl+<§$003d§>,indControl} = dEndDate
+            {sSuperControl+<§$003e§>,indControl} = IntegerToDayInAlpha(dEndDate)
+            
+            {sSuperControl,indControl}..Value = dStartDate +TAB+ dEndDate
+           type : 32
+     -
+       name : MenuFloatingYear
+       identifier : 0x286e66c81df7f4d9
+       internal_properties : CAAAAAgAAADWOyyAKS6no8MmY9dK80yxr22oGNPA0jPJ/NNeWtP0knv3Xp7onr3l5Z30Iti+CeCsEIqquoA/fQmZxpLeq8K/tF9JMq7Q2w2RmNsaHxj56S1EvY+7D/mX72pKEZPCsrw8AatvR9bpBLDJIWj2WYQRypnOktHZN9/3g3s8+SrMF6dBiwdBrxSSW9PH4l577GSFVoBp7HOCnsFaSTCh12l7qrCXTp+9AbNqjv84qQBOUOG9a6e2ldkYChQLxZ0E1cZarDX0V7LUOcwt5TATFp9Mfz5afDPlmJ8VppHN8nMbbTVvjubDW6+xy/AeOe8oNFCa0If0OBGKqeXxFf3VWgGbSpZYNbzdrTK7u8P0tg2EBpM2agVEuFcoS/C3SA6FGbRlyO3Gcy77T6sPRt9rEPqVos/tMPyNuXRe
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dStartDate is date
+            dEndDate is date
+            sSuperControl is string
+            
+            // Retrieve the name of the super control
+            sSuperControl = ExtractString(ControlPopupOwner(), 1, ".")
+            
+            // Floating year
+            dStartDate..Year--
+            dStartDate..Day++
+            
+            {sSuperControl+<§$003b§>,indControl} = dStartDate
+            {sSuperControl+<§$003c§>,indControl} = IntegerToDayInAlpha(dStartDate)
+            
+            {sSuperControl+<§$003d§>,indControl} = dEndDate
+            {sSuperControl+<§$003e§>,indControl} = IntegerToDayInAlpha(dEndDate)
+            
+            {sSuperControl,indControl}..Value = dStartDate +TAB+ dEndDate
+           type : 32
+     -
+       name : Previous_year
+       identifier : 0x286e66c81df8f4d9
+       internal_properties : CAAAAAgAAADbpVZ0BlpdPOsY45zSFQKXef+A8+IBToMbOXnpMjceTL2YJzpE6ZQlDHSkguYpaFTZAw4aCCE1khiyiF/HX5OGOHBZNZ7UKaTOtz9K1Mb31wbT45hACkwT21jAWZlkKgC/V62per9qTaDOcE7gCx4KXQsgX5tkyXnrwEBUv6OozFdAo1/nNZR/1aNXjxv5MG2jB8x2MLHcdvLNqp6elDDyKbbMoz209PH8p2QjCptewpXjuq7WpIi+ZncFimU6fdBCViYW1Kt1eTS0mTMq7vKHEohVdHaOomdfMtnW88i2UrOiweBpVsxLybMFwDmACUbORFWwkAY1r+cKn5RIjI03pRaQ6IcS0cHGoQT0a0eeZEIgCpAevwj3z6oqtugtiTCe2Ey3E4O+Cg+EQNaGy/r/QO12bXtbuks=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dStartDate is date
+            dEndDate is date
+            sSuperControl is string
+            
+            // Retrieve the name of the super control
+            sSuperControl = ExtractString(ControlPopupOwner(), 1, ".")
+            
+            // Previous year
+            dStartDate..Year--
+            dStartDate..Month=1
+            dStartDate..Day=1
+            
+            dEndDate..Year--
+            dEndDate..Month=12
+            dEndDate..Day=31
+            
+            {sSuperControl+<§$003b§>,indControl} = dStartDate
+            {sSuperControl+<§$003c§>,indControl} = IntegerToDayInAlpha(dStartDate)
+            
+            {sSuperControl+<§$003d§>,indControl} = dEndDate
+            {sSuperControl+<§$003e§>,indControl} = IntegerToDayInAlpha(dEndDate)
+            
+            {sSuperControl,indControl}..Value = dStartDate +TAB+ dEndDate
+           type : 32
+    controls : []
+    code_elements :
+     type_code : 26
+     p_codes : []
+ languages :
+  - en-GB
+ message_bar :
+  internal_properties : CAAAAAgAAADBJO8FP4fZPgA+JkeIhZZLbEt6P6zdUFoxn8sqLUXo/LJxDTgaFGBI2UViDjylZ6GMSceNFz+nUxelW9Iia6bqNj/tROzsPzidXeVTDaP5gptMb6O3Gb6llcMcoYTzskE=
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAAAF0K/1uU4j7oFwnrjTsZR/8KF2oTkobbR/y9Bp/79wDWHS5amJ6TSnKJrMvcmmZ6e5FTIjVNSMDfLy+vwkl/uLY7nG7h7WjQxMzAnb3W/5wzAn66RputPXe5k1BgLYxwxJnf10SgymZfOFWEG2tZLd2q8FH9saNiOCPtOJdKqZwoTITuZvWax6bjRrSwdY7uDpjRTsKjIKKP87vIHSUQjNHsrU5pBc13qICD+1EQ9/+RjAOFh2ediY9DUq31rHT6/4cB/b3nfNium2IjJR1lVs1zYWt8W7wg/jU634fW1WUDIdLdPL8GOMxHn5Ih1D6XV+G9VwE6EZGhjKR/eK8+ktY+4KPNByXfUh+0byPDxTSrpuPrC2p9tz9tCYDFE14JmAVy0yKjaiGaFU7O/Kw/GRLDy48TsTYGz6G4JzpCn/CrT+7aAYTSnBBVfgrTBpLExtsBUNaGAjqOG3/YNQ8pujZrCqHMQRC+uYgXjaQ68LbnaVmodYBS5uMtZq3t71M0FxtOil6/Ww8uohC+Bd83BvjLwelMgwDuyFL+EoCw7mbgGg2PyprSal32NM1o3x1zj2+maWuMOOFRGu3JxJ5J7PVdn48B37CRP9Y7ze7kI8/azR21Uds+TIHyZHXUdbG54AVvSOJDimKArXrYMYXuzdcumSj9tuffytCHgez0hl3mMWIcxQ2w1NRAB0lPCaqK0i3+l+GecYCb7ZGsghRws0zJGlABATJBfQ1JECYFL/7QINuyfSea7qr+MQ6bzqGTKfaO7y2wREBdrN91CLWFfXwjeMrptukHXGpFDeTG+WC15939Q2V2TwwfdBYjAxEVBheBd3vsLAHN3NTAE2PjGAyAo7T7DFbXXpMVjGcoxOB9fVqdXNC6rEBQ+JXmgp1eBdVsF8Mo2ehkvMnJn8wxhmLMbXIUzKzqPVgvV8dSHMmrILisWZ4UrIH7CO2ObDM+jWnPPHXOp4PY2P0s33FhIXuux6YgpOgxopzqe7BDFNhcE//gjeC5LvHRU0oPORyP/G5ZWK1KYGCw==
+  type_code : 1
+  p_codes :
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : GenerateEmail
+     internal_properties : CAAAAAgAAACMpchkqtFDGviM6uR2PVC9tPz6pkItPnQsZzml3YgozHw432f/ybpn8LVKR9JDf5VS5hOvqGz6YxaLd670uPE+fr1hPJpwaWHBFCTpgg1i7yXeJmWsCZw6P6arrct/DtsfUwrAG/mUD92AlYeKydw95xcj88w84zj/LFHm5W4k0acNed0nwn5E4kD5fjxr5yvbnvYptYfk1IV9XlRzBw6KndMxs84toFNIPPt7w2sShB5e3H68BMu4kgfGYus3FS4XauxNmlj1b7OGlD8=
+     procedure_id : 1760457513571513545
+     type_code : 14
+     code : |1+
+      // Syntax:
+      //GenerateEmail ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      
+      PROCEDURE GenerateEmail()
+      
+      // Generates a test email
+      // Initialize Random() 
+      InitRandom()
+      
+      nNbName is int = 14
+      sNAMELIST is string = <§$0000§>+TAB+<§$0001§>+TAB+<§$0002§>+TAB+<§$0003§>+TAB+<§$0004§>+TAB+<§$0005§>+TAB+<§$0006§>+TAB+<§$0007§>+TAB+<§$0008§>+TAB+<§$0009§>+TAB+<§$000a§>+TAB+<§$000b§>+TAB+<§$000c§>+TAB+<§$000d§>
+      
+      nNbDomain is int = 10
+      sDomainList is string = <§$000e§>+TAB+<§$000f§>+TAB+<§$0010§>+TAB+<§$0011§>+TAB+<§$0012§>+TAB+<§$0013§>+TAB+<§$0014§>+TAB+<§$0015§>+TAB+<§$0016§>+TAB+<§$0017§>
+      
+      HReset(EmailMessage)
+      
+      // Build a sender
+      EmailMessage.Sender = ExtractString(sNAMELIST,Random(1,nNbName))+"@"+ExtractString(sDomainList,Random(1,nNbDomain))
+      // Build a recipient
+      EmailMessage.Recipient = ExtractString(sNAMELIST,Random(1,nNbName))+"@"+ExtractString(sDomainList,Random(1,nNbDomain))
+      
+      // Build a UIDL
+      sUIDLString is string 
+      FOR i = 1 TO 32
+      	// Build the string
+      	sUIDLString += Charact(Random(0x21, 0x7e))
+      END
+      EmailMessage.UIDL = sUIDLString
+      
+      // Random Time
+      EmailMessage.Time = NumToString(Random(0,23),"02d")+NumToString(Random(0,59),"02d")+NumToString(Random(0,59),"02d")
+      
+      // Random Date
+      sStartDate is string = SC_PeriodSelection.EDT_StartDate
+      sEndDate is string = SC_PeriodSelection.EDT_EndDate
+      nMaxNbDay is int = DateDifference(sStartDate, sEndDate)
+      EmailMessage.Date = IntegerToDate(DateToInteger(sStartDate)+Random(0,nMaxNbDay))
+      sDate is string = EmailBuildDate(EmailMessage.Date,EmailMessage.Time)
+      
+      // The fixed controls
+      EmailMessage.Subject = <§$001a§>+Random(0,65535)+")"
+      EmailMessage.User = <§$001c§>
+      EmailMessage.POPServer = <§$001d§>
+      
+      // The content of the email
+      sMsg is string = <§$001e§>
+      
+      
+      EmailMessage.MessageContent = StringBuild(sMsg,EmailMessage.Sender,EmailMessage.Recipient,EmailMessage.Subject,sDate,EmailMessage.UIDL)
+      
+      // Add to the HF file
+      HAdd(EmailMessage)
+     type : 458752
+   -
+     name : EmailBuildDate
+     internal_properties : CAAAAAgAAABg9i1TF+K9+9V7yiglnANlGKi0s8XrbcXreNiTbt3CZcQ83Sc73Qs3APCirGRQN2n/+3EoQi2rXW0eMjYo+XBhihJoCADXcpDuA0SumdCPxW6FojyaA0JbJmEcuc9acr5XMDGvR2/8b99vs4F0WwanLEZpDeYO4yQe/Xnw78CqtyNK0QsNSDzGTeWd7qzPxQlvWKng1st9I3NNd0tUeluZ49vqbQuetw9xq4P3YczYx85azIamzcrF16ScI6SDTIUVlS5LKLfwB9dR9uUfpTOgn8FrGA==
+     procedure_id : 1760457513571579081
+     type_code : 14
+     code : |1-
+      // Syntax:
+      //[ <Result> = ] EmailBuildDate (<sWDDate> is string, <sTime>)
+      //
+      // Parameters:
+      //	sWDDate (string): <specify the role of sWDDate>
+      //	sTime: <specify the role of sTime>
+      // Return value:
+      // 	string: 
+      
+      PROCEDURE EmailBuildDate(sWDDate is string, sTime)
+      
+      sDate is date = sWDDate
+      
+      sDay is string = DateToDayInAlpha(sWDDate)
+      SWITCH sDay
+      	CASE <§$001f§>
+      		sDay = <§$0020§>
+      	CASE <§$0021§>
+      		sDay = <§$0022§>
+      	CASE <§$0023§>
+      		sDay = <§$0024§>
+      	CASE <§$0025§>
+      		sDay = <§$0026§>
+      	CASE <§$0027§>
+      		sDay = <§$0024§>
+      	CASE <§$0028§>
+      		sDay = <§$0029§>
+      	CASE <§$002a§>
+      		sDay = <§$002b§>
+      END
+      
+      sMonthList is string = <§$002c§>+TAB+<§$002d§>+TAB+<§$002e§>+TAB+<§$002f§>+TAB+<§$0030§>+TAB+<§$0031§>+TAB+<§$0032§>+TAB+<§$0033§>+TAB+<§$0034§>+TAB+<§$0035§>+TAB+"Nov"+TAB+"Dec"
+      sMonth is string = ExtractString(sMonthList,sDate..Month)
+      sTimeFormat is string = sTime[[1 TO 2]]+":"+sTime[[3 TO 4]]+":"+sTime[[5 TO 6]]
+      
+      RESULT sDay +", "+ NumToString(sDate..Day,"02d") +" "+ sMonth +" "+ NumToString(sDate..Year,"04d") + sTimeFormat + " +0000"
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAADWH/HI28R68fwC6mqrEmRoyyANJG6l7Yw5EUgq61+WcQcCRGz6ovPgbaz89q+F73bgDMaXoGQBemGNJJOlSU/DCOmZcvVavQ==
+  original_name : Donnees_de_test
+resources :
+ string_res :
+  identifier : 0x103a1f3100156496
+  internal_properties : CAAAAAgAAAA7wCugPa3Llh29up4VO+T++wa3OrewuQ3WP4NJV47trUqhlqE=
+  strings :
+   -
+     text :
+      en-GB : Rachel
+     index : 0
+   -
+     text :
+      en-GB : Erwan
+     index : 1
+   -
+     text :
+      en-GB : Nestor
+     index : 2
+   -
+     text :
+      en-GB : Josephine
+     index : 3
+   -
+     text :
+      en-GB : Michel
+     index : 4
+   -
+     text :
+      en-GB : Alan
+     index : 5
+   -
+     text :
+      en-GB : Laurent
+     index : 6
+   -
+     text :
+      en-GB : Leatitia
+     index : 7
+   -
+     text :
+      en-GB : Corinne
+     index : 8
+   -
+     text :
+      en-GB : Stephen
+     index : 9
+   -
+     text :
+      en-GB : Frederic
+     index : 10
+   -
+     text :
+      en-GB : Mathilde
+     index : 11
+   -
+     text :
+      en-GB : Yann
+     index : 12
+   -
+     text :
+      en-GB : John
+     index : 13
+   -
+     text :
+      en-GB : pool.com
+     index : 14
+   -
+     text :
+      en-GB : hat.com
+     index : 15
+   -
+     text :
+      en-GB : apbx.com
+     index : 16
+   -
+     text :
+      en-GB : nasa.gov
+     index : 17
+   -
+     text :
+      en-GB : kangouroo.fr
+     index : 18
+   -
+     text :
+      en-GB : hoolaoop.net
+     index : 19
+   -
+     text :
+      en-GB : win.com
+     index : 20
+   -
+     text :
+      en-GB : kravoriash.kr
+     index : 21
+   -
+     text :
+      en-GB : karting.com
+     index : 22
+   -
+     text :
+      en-GB : sell.com
+     index : 23
+   -
+     text :
+      en-GB : "@"
+     index : 24
+   -
+     text :
+      en-GB : 02d
+     index : 25
+   -
+     text :
+      en-GB : Test message automatically generated (
+     index : 26
+   -
+     text :
+      en-GB : )
+     index : 27
+   -
+     text :
+      en-GB : test
+     index : 28
+   -
+     text :
+      en-GB : poptest
+     index : 29
+   -
+     text :
+      en-GB : "From: %1\r\nTo: %2\r\nSubject: %3\r\nDate: %4\r\nMIME-Version: 1.0\r\nContent-Type: text/plain;\r\ncharset=\"iso-8859-1\"\r\nContent-Transfer-Encoding: 7bit\r\nX-UIDL: %5\r\n\r\nTest message automatically generated\r\n"
+     index : 30
+   -
+     text :
+      en-GB : Monday
+     index : 31
+   -
+     text :
+      en-GB : Mon
+     index : 32
+   -
+     text :
+      en-GB : Tuesday
+     index : 33
+   -
+     text :
+      en-GB : Tue
+     index : 34
+   -
+     text :
+      en-GB : Wednesday
+     index : 35
+   -
+     text :
+      en-GB : Wed
+     index : 36
+   -
+     text :
+      en-GB : Thursday
+     index : 37
+   -
+     text :
+      en-GB : Thu
+     index : 38
+   -
+     text :
+      en-GB : Friday
+     index : 39
+   -
+     text :
+      en-GB : Saturday
+     index : 40
+   -
+     text :
+      en-GB : Sat
+     index : 41
+   -
+     text :
+      en-GB : Sunday
+     index : 42
+   -
+     text :
+      en-GB : Sun
+     index : 43
+   -
+     text :
+      en-GB : Jan
+     index : 44
+   -
+     text :
+      en-GB : Feb
+     index : 45
+   -
+     text :
+      en-GB : Mar
+     index : 46
+   -
+     text :
+      en-GB : Apr
+     index : 47
+   -
+     text :
+      en-GB : May
+     index : 48
+   -
+     text :
+      en-GB : Jun
+     index : 49
+   -
+     text :
+      en-GB : Jul
+     index : 50
+   -
+     text :
+      en-GB : Aug
+     index : 51
+   -
+     text :
+      en-GB : Sep
+     index : 52
+   -
+     text :
+      en-GB : Oct
+     index : 53
+   -
+     text :
+      en-GB : ":"
+     index : 54
+   -
+     text :
+      en-GB : ", "
+     index : 55
+   -
+     text :
+      en-GB : " "
+     index : 56
+   -
+     text :
+      en-GB : 04d
+     index : 57
+   -
+     text :
+      en-GB : "."
+     index : 58
+   -
+     text :
+      en-GB : .EDT_StartDate
+     index : 59
+   -
+     text :
+      en-GB : .STC_DAY_BEG
+     index : 60
+   -
+     text :
+      en-GB : .EDT_EndDate
+     index : 61
+   -
+     text :
+      en-GB : .STC_DAY_END
+     index : 62
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+associated_test :
+ name : TEST_Data.wxt
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

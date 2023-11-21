@@ -1,0 +1,608 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CPOP3Proxy
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x186e66d102b81959
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  internal_properties : CAAAAAgAAAD02DYEkKsFv2Q8iH340xNRwwiA1zCIZB1CUOw8ayeXptR9ze1q1R7cFPnmsK/B5cal991KfvC4Ei4Fybn2g0KOMhEkOvkpxhYj8lAlpP/mxZJupolFn6kLL73J1Hh4wBkYnY/aPqxs4TBvrxS5FL2KoKBsH1gEGXOD/4acnveC1fEG/zqXMAwnYuBSJBBdvEsVHfD+P5/+eqE0juYMX9Gcf8okG9nj7aBmRzWNbx/Kmba2F8I0Cu1N/I6RWP091lQjcv+EsP86ZiPgEPB197dkdmrNDGekWjsWYFNsw4qFUF88306qlOM=
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      CPOP3Proxy is Class
+      	m_bCurrentSession 	is boolean
+      	m_sUser 			is string
+      	m_sPwd 				is string
+      	m_sServer 			is string
+      	m_sBanner 			is string
+      	m_sChannelName 		is string
+      	m_sSocketName 		is string
+      END
+     type : 131072
+   -
+     code : |1-
+      
+     type : 131074
+  procedures :
+   -
+     name : Constructor
+     procedure_id : 1760457552228325721
+     type_code : 27
+     code : |1+
+      // Syntax:
+      //CPOP3Proxy (<sChannelName> is string)
+      //
+      // Parameters:
+      //	sChannelName (chaîne): Identifier of the communication channel with the real server
+      // Return value:
+      // 	None
+      
+      PROCEDURE Constructor( sChannelName is string )
+      
+      :m_bCurrentSession 	= True
+      :m_sChannelName 		= sChannelName
+      :m_sSocketName 		= ""
+     type : 589824
+   -
+     name : Destructor
+     internal_properties : CAAAAAgAAABX7NNwpf4fpJN2VZx8URbd0HnSUxb8z1KOl1gOg9hOcYXSs+Fsd81DWRQi7JvKiSJri16yeIZ5OS4YsGA56yruYumWSKwxRYvKj+B5n8X+fhBrOKTLVgd63MWLV0DMXwJG1ekCRPzu3o21
+     procedure_id : 1760457552228391257
+     type_code : 28
+     code : |1+
+      // Syntax:
+      //Class1 ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      PROCEDURE Destructor()
+      
+      IF SocketExist(:m_sSocketName) THEN SocketClose(:m_sSocketName)
+     type : 655360
+   -
+     name : sBanner
+     internal_properties : CAAAAAgAAADC5BKo7HY/OBZvBIQUBE4zJMj1HG+1oURhpD6ba6Xg9DChPSZ2lTP/F4nb7LEOfPalTJzZPzjxo0KM+xaZ/NxGSwmlhdApTF3V6rh87n09M4W3jg6NhADM9yiNaoFoBYNwcooQ9M24tFHYbe3w6k4K4oUqnYLTa9FvqDVyqXaDY3vKqXHNAO0H+SqmVsCBxhb3u3pT4w==
+     procedure_id : 1760457552228456793
+     type_code : 12
+     code : |1+
+      // Syntax:
+      //[ <Result> = ] sBanner ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	C String: 
+      
+      PROCEDURE sBanner()
+      // Returns a welcome banner
+      
+      RESULT <§$0000§>
+     type : 458752
+   -
+     name : sProcessQuery
+     internal_properties : CAAAAAgAAADM45EdEreVOp94qXAi4s3K3TThO8mS+JbLDvOsaYeYtjB6pqZdoJMZzidAf7gHGbuNSsIWNBqd0EylvFAw4mxwU55jmda4EkKNEnq/O2B5v97c+ulGaB9Yp5oiy8SY3KVRZCbt8TfrwOFqyLS/6IMCiVvGfkvhvHd90OpBpvLaDsOb8E3NO2VkRgXCPDIiZtGr6CWFVwqhx5vMFu9SNLn1Rj5BNg==
+     procedure_id : 1760457552228522329
+     type_code : 12
+     code : |1+
+      // Syntax:
+      //[ <Result> = ] sProcessQuery (<sQuery> is string)
+      //
+      // Parameters:
+      //	sQuery (string): <specify the role of sQuery>
+      // Return value:
+      // 	Undefined type:       Incoming query
+      //	bCurrentSession (boolean): Must be set to False to end the session once the query result was returned
+      
+      PROCEDURE sProcessQuery( sQuery is string )
+      
+      XLog(<§$0001§>,<§$0002§>+sQuery)
+      
+      // Analyze the string
+      sKeyword is string = Upper(ExtractString(sQuery,1," "))
+      nSpacePos is int = Position(sQuery," ")
+      sArg is string
+      IF nSpacePos>0 THEN
+      	sArg = Middle(sQuery,nSpacePos+1)
+      END
+      
+      XLog(<§$0004§>,<§$0005§>+sKeyword)
+      
+      // Process the command
+      SWITCH sKeyword
+      	CASE <§$0006§>
+      		RESULT :sProcessCommand_USER(sArg)
+      	CASE <§$0007§>
+      	CASE <§$0008§>
+      		:m_bCurrentSession = False
+      		XLog(<§$0009§>,<§$000a§>)
+      		RESULT <§$000b§>
+      	CASE <§$000c§>
+      	CASE <§$000d§>
+      	CASE <§$000e§>
+      		
+      	CASE <§$000f§>
+      	CASE <§$0010§>
+      	CASE <§$0011§>
+      // Optional commands
+      	CASE <§$0012§>
+      	CASE <§$0013§>
+      	CASE <§$0014§>
+      END
+      
+      // The other commands are relayed
+      RESULT :sRelayCommand(sKeyword,sArg)
+      
+     type : 458752
+   -
+     name : sProcessCommand_USER
+     procedure_id : 1760457552228587865
+     type_code : 12
+     code : |1+
+      // Syntax:
+      //[ <Result> = ] sProcessCommand_USER (<sName> is string)
+      //
+      // Parameters:
+      //	sName (string): Name of the user
+      // Return value:
+      // 	Undefined type:   
+      
+      PROCEDURE sProcessCommand_USER( sName is string )
+      
+      // With a proxy, the user name must have the following format
+      // <address of real server>:<user name>
+      // or
+      // <user name>@<address of real server>
+      
+      nSeparPos is int = Position(sName,":")
+      IF nSeparPos > 0 THEN
+      	:m_sServer 	= Left(sName,nSeparPos-1)
+      	:m_sUser 	= Middle(sName,nSeparPos+1)
+      ELSE
+      	nSeparPos 	= Position(sName,"@")
+      	:m_sUser 	= Left(sName,nSeparPos-1)
+      	:m_sServer 	= Middle(sName,nSeparPos+1)
+      END
+      
+      // Connect to the real server
+      :m_sSocketName = :m_sUser+:m_sChannelName
+      IF SocketConnect(:m_sSocketName,110,:m_sServer) = False THEN
+      	:m_bCurrentSession = False
+      	RESULT <§$0017§>
+      END
+      
+      // Switch to final tag (CRLF)
+      SocketChangeTransmissionMode(:m_sSocketName,SocketEndTagBuffer,CRLF)
+      
+      // We are connected, read the banner of the real server
+      :m_sBanner = SocketRead(:m_sSocketName,False)
+      XLog(<§$0018§>,<§$0019§>+:m_sBanner)
+      
+      // Transmit a USER command
+      SocketWrite(:m_sSocketName,<§$001a§>+:m_sUser)
+      
+      // Read the response that is returned to the client
+      sResponse is string = SocketRead(:m_sSocketName,False)
+      
+      RESULT sResponse
+     type : 458752
+   -
+     name : sRelayCommand
+     internal_properties : CAAAAAgAAABouuwGQxwDvsRrGIKm0EpfjgA/dIXDhWLvEErBTWGU2CYNi5qcN4MRfZ27OrMaiFrn9FqlYdZF1fgIZ4j3rBw+/QGP3bJ7DK8bbv213XDAwiJKKTsYN70JeGnmS6gTEAr5BQ1BC/ThTeb9OtbnJd2NZ/hVEsVWWCp0/V4DAHm+GrABENoUBwY0aotT46vIOXVVGdj1TQ==
+     procedure_id : 1760457552228653401
+     type_code : 12
+     code : |1-
+      // Syntax:
+      //[ <Result> = ] sRelayCommand (<sCommand> is string, <sArgs> is string)
+      //
+      // Parameters:
+      //	sCommand (string): Command to relay
+      //	sArgs (string): Arguments
+      // Return value:
+      // 	string:     
+      
+      PROCEDURE sRelayCommand( sCommand is string , sArgs is string )
+      
+      // Write the command on the socket of the real server
+      SocketWrite(:m_sSocketName,sCommand+" "+sArgs)
+      
+      // Read and return the response
+      SocketChangeTransmissionMode(:m_sSocketName,SocketNoEndTag)
+      sServerResponse is string
+      sBufferMore is string  = SocketRead(:m_sSocketName,False)
+      WHILE sBufferMore <> ""
+      	sServerResponse+=sBufferMore
+      	sBufferMore = SocketRead(:m_sSocketName,False)
+      END
+      SocketChangeTransmissionMode(:m_sSocketName,SocketEndTag,CRLF)
+      
+      WHILE Right(sServerResponse,Length(CRLF))=CRLF
+      	sServerResponse = Left(sServerResponse,Length(sServerResponse)-Length(CRLF))
+      END
+      
+      // In case of the RETR command, archive the email
+      IF sCommand=<§$000e§> THEN
+      	nMessage is int = sArgs
+      	:ArchiveEmail(sServerResponse,nMessage)
+      END
+      
+      // TODO: Branch other custom processes (filtering, automatic filing,
+      // start external applications, etc.
+      
+      RESULT sServerResponse
+     type : 458752
+   -
+     name : ArchiveEmail
+     internal_properties : CAAAAAgAAADJyZAX4UVJRzCmN2y+AWKRVdILw3hrxlNZI/9PX/Z3tbgYjjGU7N2m7C80MyOx44SQqqfmnH3Af8kuRxQ9Zf0ZrPzt2yTMPFY5zgndNHdll+Fx9Apo8mOIH+fEpJujGsw1yJ/RWzFU6fW9UUiz0IG4ui1NCNE//3aztaEX2qI2/ChlJVs9Ow1CnIAjbxqO23Ms5kOCPGjz6cxsISPUnla7gvDuBjiDs7XOiV17dcByTEVXHsAiXXFycKa2LRwLuVDOVg==
+     procedure_id : 1760457552228718937
+     type_code : 12
+     code : |1-
+      // Syntax:
+      //ArchiveEmail (<sContent> is string, <nMsg> is int)
+      //
+      // Parameters:
+      //	sContent (string): content of the message to archive
+      //	nMsg (integer): number of the message
+      // Return value:
+      // 	None
+      
+      PROCEDURE ArchiveEmail(  LOCAL sContent is string , nMsg is int )
+      
+      
+      // Local variables
+      sLine 			is string
+      sHeaderName 		is string
+      sHeaderContent 	is string
+      
+      // To perform the archiving, ask for the UIDL of the message to the real server
+      SocketWrite(:m_sSocketName,<§$001b§>+nMsg)
+      sUIDL is string = SocketRead(:m_sSocketName,False)
+      // Cut the header
+      sUIDL = ExtractString(sUIDL,3," ")
+      
+      nPosCRContent is int = Position(sContent,CR)
+      IF nPosCRContent>0 THEN
+      	sContent = Middle(sContent,nPosCRContent+Length(CR))
+      END
+      
+      // Add the record to the HF file
+      EmailMessage.POPServer 	= :m_sServer
+      EmailMessage.User 	= :m_sUser
+      EmailMessage.UIDL 			= sUIDL
+      EmailMessage.MessageContent = sContent
+      
+      // Browse the source code of the message to extract some useful headers
+      FOR EACH string sLine of sContent SEPARATED BY CR
+      	
+      	// Extract the name and content of the header
+      	sHeaderName		= ExtractString(sLine,1,":")
+      	sHeaderContent	= Middle(sLine,Length(sHeaderName)+3)
+      	// According to the name of the header
+      	SWITCH (sHeaderName)
+      		CASE "Subject"
+      			EmailMessage.Subject = sHeaderContent
+      		CASE "Date"
+      			// The dates have the following format: Thu, 12 Feb 2004 18:34:06 +0100
+      			sExpr is string = "[A-Za-z]+, ([0-9]+ [A-Za-z]+ [0-9]+) ([0-9][0-9]:[0-9][0-9]:[0-9][0-9]) .*"
+      			sDate, sTime are strings
+      			IF MatchRegularExpression(sHeaderContent,sExpr,sDate,sTime) THEN
+      				EmailMessage.Time = Replace(sTime,":","")
+      				EmailMessage.Date = :sDateConversion(sDate)
+      			END
+      		CASE "From"
+      			EmailMessage.Sender = sHeaderContent
+      		CASE "To"
+      			EmailMessage.Recipient = sHeaderContent
+      	END
+      	
+      END
+      
+      // Adds the message
+      HAdd(EmailMessage)
+      IF ErrorOccurred THEN	XLog(gPen(iLightRed)+<§$0021§>,<§$0022§>+HErrorInfo())
+     type : 458752
+   -
+     name : sDateConversion
+     internal_properties : CAAAAAgAAAAiVlq4frVtIkgkWgGrCa8tYQiL5BqjTbtmLkprCLrb3Y93vZ8hOl1SQ4fSRpkjk34iV+CSHJBfHAhxGe8Jz4y9snUhSEYBawd9Y2lxRXtMNXHHX7gdVvHzh3ge4pr7YbR/z5/1wfu2KTlQHzVNREpvaTWfn2F79JzwGWF3a0EfQo+AMj5U7Fw3n2E6EMnAcp65Y+Jns7KpbGPz0OWwVgdjmQAapMs0xg8FKTILJ1/WCE3MCJXL+9wJZnaQaSW8jiDdbvKqGdIi3lfa1YGqr5KfLqoZMDjUxuu9cQdU/n8WSlM2mrJxHmDBcOmHM/p1fdkHIw==
+     procedure_id : 1760457552228784473
+     type_code : 12
+     code : |1-
+      // Syntax:
+      //[ <Result> = ] sConversionDate (<sPOPDate> is string)
+      //
+      // Parameters:
+      //	sPOPDate (string): Date in the format used by the POP3 protocol
+      // Return value:
+      // 	string: 
+      
+      PROCEDURE sDateConversion( sPOPDate is string )
+      
+      // The dates have the following format: DD MMM YYYY with the month in letters
+      dd is string = ExtractString(sPOPDate,1," ")
+      mm is string = ExtractString(sPOPDate,2," ")
+      yyyy is string = ExtractString(sPOPDate,3," ")
+      
+      SWITCH mm
+      	CASE <§$0023§>
+      		mm = "01"
+      	CASE <§$0025§>
+      		mm = "02"
+      	CASE <§$0027§>
+      		mm = "03"
+      	CASE	<§$0029§>
+      		mm = "04"
+      	CASE	<§$002b§>
+      		mm = "05"
+      	CASE	<§$002d§>
+      		mm = "06"
+      	CASE	<§$002f§>
+      		mm = "07"
+      	CASE	<§$0031§>
+      		mm = "08"
+      	CASE	<§$0033§>
+      		mm = "09"
+      	CASE	<§$0035§>
+      		mm = "10"
+      	CASE	<§$0037§>
+      		mm = "11"
+      	CASE	<§$0039§>
+      		mm = "12"
+      END
+      
+      RESULT yyyy+mm+dd
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CProxyPOP3
+resources :
+ string_res :
+  identifier : 0x102b66f104c44a1b
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : +OK POP3 WDProxy ready
+     index : 0
+   -
+     text :
+      en-GB : QUERY
+     index : 1
+   -
+     text :
+      en-GB : "Process the query: "
+     index : 2
+   -
+     text :
+      en-GB : " "
+     index : 3
+   -
+     text :
+      en-GB : ORDERS
+     index : 4
+   -
+     text :
+      en-GB : "Command received:"
+     index : 5
+   -
+     text :
+      en-GB : USER
+     index : 6
+   -
+     text :
+      en-GB : PASS
+     index : 7
+   -
+     text :
+      en-GB : QUIT
+     index : 8
+   -
+     text :
+      en-GB : THREAD
+     index : 9
+   -
+     text :
+      en-GB : Process the quit
+     index : 10
+   -
+     text :
+      en-GB : +OK Goodbye
+     index : 11
+   -
+     text :
+      en-GB : STAT
+     index : 12
+   -
+     text :
+      en-GB : LIST
+     index : 13
+   -
+     text :
+      en-GB : RETR
+     index : 14
+   -
+     text :
+      en-GB : DELE
+     index : 15
+   -
+     text :
+      en-GB : NOOP
+     index : 16
+   -
+     text :
+      en-GB : RSET
+     index : 17
+   -
+     text :
+      en-GB : APOP
+     index : 18
+   -
+     text :
+      en-GB : TOP
+     index : 19
+   -
+     text :
+      en-GB : UIDL
+     index : 20
+   -
+     text :
+      en-GB : ":"
+     index : 21
+   -
+     text :
+      en-GB : "@"
+     index : 22
+   -
+     text :
+      en-GB : "-ERR Failure connecting to the POP server"
+     index : 23
+   -
+     text :
+      en-GB : POP3
+     index : 24
+   -
+     text :
+      en-GB : "Banner received: "
+     index : 25
+   -
+     text :
+      en-GB : "USER "
+     index : 26
+   -
+     text :
+      en-GB : "UIDL "
+     index : 27
+   -
+     text :
+      en-GB : Subject
+     index : 28
+   -
+     text :
+      en-GB : Date
+     index : 29
+   -
+     text :
+      en-GB : "[A-Za-z]+, ([0-9]+ [A-Za-z]+ [0-9]+) ([0-9][0-9]:[0-9][0-9]:[0-9][0-9]) .*"
+     index : 30
+   -
+     text :
+      en-GB : From
+     index : 31
+   -
+     text :
+      en-GB : To
+     index : 32
+   -
+     text :
+      en-GB : ERROR
+     index : 33
+   -
+     text :
+      en-GB : "Error archiving an email: "
+     index : 34
+   -
+     text :
+      en-GB : Jan
+     index : 35
+   -
+     text :
+      en-GB : "01"
+     index : 36
+   -
+     text :
+      en-GB : Feb
+     index : 37
+   -
+     text :
+      en-GB : "02"
+     index : 38
+   -
+     text :
+      en-GB : Mar
+     index : 39
+   -
+     text :
+      en-GB : "03"
+     index : 40
+   -
+     text :
+      en-GB : Apr
+     index : 41
+   -
+     text :
+      en-GB : "04"
+     index : 42
+   -
+     text :
+      en-GB : May
+     index : 43
+   -
+     text :
+      en-GB : "05"
+     index : 44
+   -
+     text :
+      en-GB : Jun
+     index : 45
+   -
+     text :
+      en-GB : "06"
+     index : 46
+   -
+     text :
+      en-GB : Jul
+     index : 47
+   -
+     text :
+      en-GB : "07"
+     index : 48
+   -
+     text :
+      en-GB : Aug
+     index : 49
+   -
+     text :
+      en-GB : "08"
+     index : 50
+   -
+     text :
+      en-GB : Sep
+     index : 51
+   -
+     text :
+      en-GB : "09"
+     index : 52
+   -
+     text :
+      en-GB : Oct
+     index : 53
+   -
+     text :
+      en-GB : "10"
+     index : 54
+   -
+     text :
+      en-GB : Nov
+     index : 55
+   -
+     text :
+      en-GB : "11"
+     index : 56
+   -
+     text :
+      en-GB : Dec
+     index : 57
+   -
+     text :
+      en-GB : "12"
+     index : 58
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
